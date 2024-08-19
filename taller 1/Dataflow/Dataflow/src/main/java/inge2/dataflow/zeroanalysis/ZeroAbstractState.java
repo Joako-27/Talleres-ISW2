@@ -62,16 +62,16 @@ public class ZeroAbstractState {
      */
     public ZeroAbstractState union(ZeroAbstractState another) {
         // TODO: IMPLEMENTAR
-        Set<String> variables_this = this.getDefinedVariables();
-        Set<String> variables_another = another.getDefinedVariables();
-        for (String key: variables_this) {
+        Set<String> variables_this = this.getDefinedVariables(); //obtenemos las variables en el estado actual
+        Set<String> variables_another = another.getDefinedVariables(); //obtenemos las variables en el estado a unir
+        for (String key: variables_this) { //por cada clave en el estado actual analizamos si esta presente en el estado a unir
             if(another.map.get(key) != null){
-                this.setValue(key,this.getValue(key).merge(another.getValue(key)));
+                this.setValue(key,this.getValue(key).merge(another.getValue(key))); //Si esta presente en el estado a unir, hacemos un merge con el estado actual
             }
         }
-        for(String key: variables_another){
+        for(String key: variables_another){//por cada clave en el estado a unir buscamos si no esta en el estado actual
             if(this.map.get(key) == null){
-                this.setValue(key,another.getValue(key));
+                this.setValue(key,another.getValue(key)); //Si la clave no estaba en el estado actual lo definimos
             }
         }
         return this;

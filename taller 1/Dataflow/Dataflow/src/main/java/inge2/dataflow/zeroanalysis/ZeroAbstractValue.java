@@ -48,10 +48,11 @@ public enum ZeroAbstractValue {
      */
     public ZeroAbstractValue add(ZeroAbstractValue another) {
         // TODO: IMPLEMENTAR
-        if(this == BOTTOM || another == BOTTOM) return BOTTOM;
-        if(this == ZERO) return another;
-        if(another == ZERO) return this;
-        else return MAYBE_ZERO;
+        //Especificado en la tabla de verdad de la parte 1
+        if(this == BOTTOM || another == BOTTOM) return BOTTOM; //si cualquiera de los dos es bottom, la suma sera bottom
+        if(this == ZERO) return another; //sumar ZERO no cambia el estado del otro sumando
+        if(another == ZERO) return this; //analogo al de arriba
+        else return MAYBE_ZERO; //si no se cumplio ninguno de los casos anteriores es porque la suma sera MAYBE_ZERO
     }
 
     /**
@@ -61,10 +62,11 @@ public enum ZeroAbstractValue {
      */
     public ZeroAbstractValue divideBy(ZeroAbstractValue another) {
         // TODO: IMPLEMENTAR
-        if(this == BOTTOM || another == BOTTOM) return BOTTOM;
-        if(another == ZERO) return BOTTOM;
-        if(this == ZERO) return ZERO;
-        else return MAYBE_ZERO;
+        //Especificado en la tabla de verdad de la parte 1
+        if(this == BOTTOM || another == BOTTOM) return BOTTOM; //si cualquiera de los dos es bottom, la division sera bottom
+        if(another == ZERO) return BOTTOM; //si divido por ZERO el resultado sera BOTTOM
+        if(this == ZERO) return ZERO; //Si el numerador es ZERO no importa el valor de another, sera ZERO el valor final
+        else return MAYBE_ZERO; //Si no, sera MAYBE_ZERO
     }
 
     /**

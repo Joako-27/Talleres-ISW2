@@ -60,8 +60,9 @@ public class ZeroValueVisitor extends AbstractValueVisitor<ZeroAbstractValue> {
     @Override
     public void visitDivExpression(ZeroAbstractValue leftOperand, ZeroAbstractValue rightOperand) {
         // TODO: IMPLEMENTAR.
-        resolvedValue = leftOperand.divideBy(rightOperand);
+        resolvedValue = leftOperand.divideBy(rightOperand); //Hacemos la division
         if(rightOperand == ZeroAbstractValue.ZERO || rightOperand == ZeroAbstractValue.MAYBE_ZERO) possibleDivisionByZero = true;
+        //Si hay un 0 o un posible 0 la variable se vuelve verdadera
     }
 
     /**
@@ -102,8 +103,8 @@ public class ZeroValueVisitor extends AbstractValueVisitor<ZeroAbstractValue> {
     @Override
     public void visitIntegerConstant(int value) {
         // TODO: IMPLEMENTAR.
-        if(value == 0) resolvedValue = ZeroAbstractValue.ZERO;
-        else resolvedValue = ZeroAbstractValue.NOT_ZERO;
+        if(value == 0) resolvedValue = ZeroAbstractValue.ZERO; //Si la constante a asignar es 0, el valor final es ZERO
+        else resolvedValue = ZeroAbstractValue.NOT_ZERO; //Si no, el valor final sera NOT_ZERO
     }
 
     /**

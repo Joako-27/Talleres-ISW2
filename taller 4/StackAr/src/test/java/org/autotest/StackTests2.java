@@ -56,4 +56,5 @@ public class StackTests2 extends MutationAnalysisRunner {
         stack.push(43);
         assertEquals("[42,43]", stack.toString());
     }
+
 }

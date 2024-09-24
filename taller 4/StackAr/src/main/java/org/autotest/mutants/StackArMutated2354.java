@@ -1,7 +1,7 @@
 package org.autotest.mutants;
 
 /**
- * FalseConditionalsMutator: Se reemplazó capacity < 0 por false en la línea 19.
+ * IncrementsMutator: Se reemplazó ++ por -- en la línea 64.
  */
 public class StackArMutated2354 extends org.autotest.Stack {
     private static final int DEFAULT_CAPACITY = 10;
@@ -15,7 +15,7 @@ public class StackArMutated2354 extends org.autotest.Stack {
     }
 
     public StackArMutated2354(int capacity) throws java.lang.IllegalArgumentException {
-        if (true) {
+        if (capacity < 0) {
             throw new java.lang.IllegalArgumentException();
         }
         this.elems = new java.lang.Object[capacity];
@@ -59,7 +59,7 @@ public class StackArMutated2354 extends org.autotest.Stack {
         if (isFull()) {
             throw new java.lang.IllegalStateException();
         }
-        this.readIndex++;
+        this.readIndex--;
         this.elems[readIndex] = o;
     }
 

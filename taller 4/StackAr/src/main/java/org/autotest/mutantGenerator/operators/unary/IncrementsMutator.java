@@ -26,17 +26,32 @@ public class IncrementsMutator extends MutationOperator {
             return false;
         }
         CtUnaryOperator op = (CtUnaryOperator) candidate;
-        List<CtUnaryOperator> targetOperations;
-        return false;
+        List<UnaryOperatorKind> targetOperations = Arrays.asList(
+                UnaryOperatorKind.PREINC,
+                UnaryOperatorKind.PREDEC,
+                UnaryOperatorKind.POSTDEC,
+                UnaryOperatorKind.POSTINC
+        );
+        return targetOperations.contains(op.getKind());
     }
 
     @Override
     public void process(CtElement candidate) {
-        // COMPLETAR
+        CtUnaryOperator op = (CtUnaryOperator) candidate;
+        op.setKind(getReplacement(op.getKind()));
     }
 
     public UnaryOperatorKind getReplacement(UnaryOperatorKind kind) {
-        // COMPLETAR
+        switch (kind){
+            case PREDEC:
+                return UnaryOperatorKind.PREINC;
+            case PREINC:
+                return UnaryOperatorKind.PREDEC;
+            case POSTDEC:
+                return UnaryOperatorKind.POSTINC;
+            case POSTINC:
+                return UnaryOperatorKind.POSTDEC;
+        }
         return null;
     }
 

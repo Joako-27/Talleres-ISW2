@@ -7,3 +7,9 @@ EJERCICIO 2
 a) El StackTests1 genero 74 mutantes y encontro muertos a 17 y vivos a 57. El StackTests2 genero 74 mutantes y dejo muertos a 32 y vivos a 42
 b) mutationScore del StackTests1: 22,87%
 mutationScore del StackTests2: 43,24%
+
+EJERCICIO 3:
+mutantes equivalentes: 6823, 6069, 595(?), 9100, 6857(?), 2497(?), 4672, 5995, 6525, 8074(?),
+1389(?), 2274, 384, 9193(?)
+
+confirmados equivalentes: 8, no confirmados: 6, total: 14

@@ -28,7 +28,7 @@ public class FalseConditionalsMutator extends MutationOperator {
     @Override
     public void process(CtElement candidate) {
         CtIf op = (CtIf) candidate;
-        op.setCondition(op.getFactory().Code().createLiteral(true));
+        op.setCondition(op.getFactory().Code().createLiteral(false));
     }
 
     @Override

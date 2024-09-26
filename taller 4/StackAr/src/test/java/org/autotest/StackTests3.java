@@ -2,6 +2,8 @@ package org.autotest;
 
 import java.util.ArrayList;
 
+import org.eclipse.jdt.internal.core.util.ExceptionAttribute;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StackTests3 extends MutationAnalysisRunner {
@@ -130,5 +132,21 @@ public class StackTests3 extends MutationAnalysisRunner {
         assertEquals(stack1.hashCode(), stack2.hashCode());
         stack1.pop();
         assertNotEquals(stack1.hashCode(), stack2.hashCode());
+    }
+
+    public void testConstructor() {
+        assertDoesNotThrow(() -> {Stack stack = createStack();}); //tratando de hacer saltar el mutante 4527
+    }
+
+    public void testTop() throws Exception{
+        Stack stack = createStack(5);
+        stack.push(1);
+        assertEquals(1, stack.top());
+        stack.push(2);
+        assertEquals(2, stack.top());
+        stack.pop();
+        assertEquals(1, stack.top());
+        stack.pop();
+        assertThrows(IllegalStateException.class, () -> {stack.top();});
     }
 }

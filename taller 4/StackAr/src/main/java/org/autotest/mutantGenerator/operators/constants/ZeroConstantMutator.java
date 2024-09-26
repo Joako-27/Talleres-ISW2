@@ -5,6 +5,7 @@ import spoon.reflect.code.CtLiteral;
 import spoon.reflect.declaration.CtElement;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ public class ZeroConstantMutator extends MutationOperator {
 
         CtLiteral op = (CtLiteral)candidate;
         String type = op.getType().toString();
-        List<String> targetTypes = Arrays.asList(
+        List<String> targetTypes = Collections.singletonList(
                 "int"
         );
 
@@ -34,11 +35,7 @@ public class ZeroConstantMutator extends MutationOperator {
         }
 
         String parentNodeCode = op.getParent().toString();
-        if (parentNodeCode.contains("0")) {
-            return false;
-        }
-
-        return true;
+        return !parentNodeCode.contains("0");
     }
 
     @Override

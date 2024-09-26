@@ -7,6 +7,7 @@ import spoon.reflect.declaration.CtElement;
 import spoon.reflect.reference.CtTypeReference;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ public class NullReturnsMutator extends MutationOperator {
         }
         CtReturn op = (CtReturn)candidate;
         CtTypeReference type = getReturnedExpressionType(op);
-        List<String> targetTypes = Arrays.asList(
+        List<String> targetTypes = Collections.singletonList(
                 "java.lang.Object"
         );
         return targetTypes.contains(type);

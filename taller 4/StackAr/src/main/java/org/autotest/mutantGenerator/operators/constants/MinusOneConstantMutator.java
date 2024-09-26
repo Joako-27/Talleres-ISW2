@@ -5,6 +5,7 @@ import spoon.reflect.code.CtLiteral;
 import spoon.reflect.declaration.CtElement;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -26,8 +27,8 @@ public class MinusOneConstantMutator extends MutationOperator {
 
         CtLiteral op = (CtLiteral)candidate;
         String type = getLiteralType(op);
-        List<String> targetTypes = Arrays.asList(
-            "int"
+        List<String> targetTypes = Collections.singletonList(
+                "int"
         );
 
         if (!targetTypes.contains(type)) {
@@ -37,12 +38,8 @@ public class MinusOneConstantMutator extends MutationOperator {
         String parentNodeCode = op.getParent().toString();
         // No usamos op.getValue().toString() para obtener el valor del literal sino que miramos el parent porque
         // Spoon separa los literales negativos en dos nodos: el operador de negación y el literal.
-        if (parentNodeCode.contains("-1")) {
-            // Para evitar generar mutantes inválidos, ignoramos los literales que ya son -1, ya que produciría "--1"
-            return false;
-        }
-
-        return true;
+        // Para evitar generar mutantes inválidos, ignoramos los literales que ya son -1, ya que produciría "--1"
+        return !parentNodeCode.contains("-1");
     }
 
     @Override

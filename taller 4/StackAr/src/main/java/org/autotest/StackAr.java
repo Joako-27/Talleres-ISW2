@@ -102,10 +102,8 @@ public class StackAr extends Stack {
 		StackAr other = (StackAr) obj;
 		if (!Arrays.equals(elems, other.elems))
 			return false;
-		if (readIndex != other.readIndex)
-			return false;
-		return true;
-	}
+        return readIndex == other.readIndex;
+    }
 
 	@Override
 	public String toString() {

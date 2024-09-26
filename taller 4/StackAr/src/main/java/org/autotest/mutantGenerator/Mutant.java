@@ -33,7 +33,7 @@ public class Mutant {
     /**
      * El nuevo nombre de la clase mutada.
      */
-    private String mutantClassName;
+    private final String mutantClassName;
 
     public Mutant(CtClass mutatedSpoonClass, String mutationDescription) {
         this.mutatedSpoonClass = mutatedSpoonClass;

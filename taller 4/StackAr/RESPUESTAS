@@ -1,14 +1,15 @@
 EJERCICIO 1
-a) 75 mutantes
-b)FalseConditionalsMutator y TrueConditionalsMutator generaron 10 mutantes 
+a) 71 mutantes
+b)FalseConditionalsMutator,TrueConditionalsMutator y NegateConditionsMutator generaron 9 mutantes 
 c)ConditionalsBoundaryMutator, EmptyReturnsMutator, IncrementsMutator generaron 3 mutantes. NullReturnsMutator no genero ninguno
 
 EJERCICIO 2
-a) El StackTests1 genero 74 mutantes y encontro muertos a 17 y vivos a 57. El StackTests2 genero 74 mutantes y dejo muertos a 32 y vivos a 42
-b) mutationScore del StackTests1: 22,87%
-mutationScore del StackTests2: 43,24%
+a) El StackTests1 genero 71 mutantes y encontro muertos a 18 y vivos a 53. El StackTests2 genero 71 mutantes y dejo muertos a 35 y vivos a 36
+b) mutationScore del StackTests1: 25%
+mutationScore del StackTests2: 49%
 
 EJERCICIO 3:
+Se generaron 71 mutantes, se eliminaron 56 y quedaron vivos 15. Mutation score fue de 78%
 mutantes equivalentes: 6823, 6069, 595(?), 9100, 6857(?), 2497(?), 4672, 5995, 6525, 8074(?),
 1389(?), 2274, 384, 9193(?)
 

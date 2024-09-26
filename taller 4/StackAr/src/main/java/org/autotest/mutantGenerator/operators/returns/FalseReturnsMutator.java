@@ -6,6 +6,7 @@ import spoon.reflect.code.CtReturn;
 import spoon.reflect.declaration.CtElement;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ public class FalseReturnsMutator extends MutationOperator {
 
         CtReturn op = (CtReturn)candidate;
         String type = getReturnedExpressionType(op);
-        List<String> targetTypes = Arrays.asList(
+        List<String> targetTypes = Collections.singletonList(
                 "boolean"
         );
         return targetTypes.contains(type);

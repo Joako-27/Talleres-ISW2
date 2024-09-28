@@ -9,8 +9,9 @@ b) mutationScore del StackTests1: 25%
 mutationScore del StackTests2: 49%
 
 EJERCICIO 3:
-Se generaron 71 mutantes, se eliminaron 56 y quedaron vivos 15. Mutation score fue de 78%
-mutantes equivalentes: 6823, 6069, 595(?), 9100, 6857(?), 2497(?), 4672, 5995, 6525, 8074(?),
-1389(?), 2274, 384, 9193(?)
-
-confirmados equivalentes: 8, no confirmados: 6, total: 14
+Se generaron 71 mutantes, se eliminaron 56 y quedaron vivos 14. Mutation score fue de 80%
+Los mutantes vivos son todos equivalentes al programa original:
+Los mutantes 2189, 6897, 9291, 8707, 3184, 1703, 1343 y 6162 modifican a la función hashcode, y los resultados siguen siendo funciones de hash o no generan infecciones
+Los mutantes 7000, 4988, 5555 y 6240 no cambian nada
+El mutante 9181 modifica la funcion equals y se saltea el chequeo de ver si los dos stacks son el mismo. No genera falla ya que luego se chequea si contiene los mismos elementos y capacidad.
+El mutante 9202 modifica la funcion pop, y se saltea el chequeo de ver si el stack está vacío. No causa falla ya que al llamar a la funcion top para devolver el valor se vuelve a chequear si el stack está vacío, y ahí salta la excepción.

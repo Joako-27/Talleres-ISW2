@@ -106,6 +106,10 @@ public class StackTests3 extends MutationAnalysisRunner {
         assertTrue(stack1.equals(stack2));
         stack1.pop();
         assertFalse(stack2.equals(stack1));
+        stack2.pop();
+        stack2.pop();
+        stack2.push(12);
+        assertFalse(stack1.equals(stack2));
         Stack stack3 = createStack(9);
         stack2.push(13);
         stack2.push(14);

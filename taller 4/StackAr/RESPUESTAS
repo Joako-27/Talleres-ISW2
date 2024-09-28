@@ -17,5 +17,5 @@ c) Los mutantes vivos son todos equivalentes al programa original:
     El mutante 9181 modifica la funcion equals y se saltea el chequeo de ver si los dos stacks son el mismo. No genera falla ya que luego se chequea si contiene los mismos elementos y capacidad.
     El mutante 9202 modifica la funcion pop, y se saltea el chequeo de ver si el stack está vacío. No causa falla ya que al llamar a la funcion top para devolver el valor se vuelve a chequear si el stack está vacío, y ahí salta la excepción.
 d) 61%
-e) El mutante con menor covertura de instrucciones es el 9545, que cambia en el constructor del stack el chequeo de que la capacidad sea < 0 para tirar una excepcion a que sea >= 0.
+e) El mutante con menor covertura de instrucciones es el 9773 con 4%, que cambia en el constructor del stack el chequeo de que la capacidad sea < 0 para tirar una excepcion a true.
 Como el mutante tiene un error al tratar de generar el primer stack para el primer test, nunca llega a ejecutar más líneas de código.

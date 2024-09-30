@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78050df7-9e6d-4dbf-8ae4-a5dd3ddd5de0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESPUESTAS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/StackAr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/helpers/BinaryOperatorKindToString$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/helpers/BinaryOperatorKindToString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/helpers/UnaryOperatorKindToString$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/helpers/UnaryOperatorKindToString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/Mutant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/MutantsGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/MutationOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/binary/ConditionalsBoundaryMutator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/binary/ConditionalsBoundaryMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/binary/MathMutator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/binary/MathMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/binary/NegateConditionsMutator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/binary/NegateConditionsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/conditionals/FalseConditionalsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/conditionals/TrueConditionalsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/constants/MinusOneConstantMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/constants/OneConstantMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/constants/ZeroConstantMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/returns/EmptyReturnsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/returns/FalseReturnsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/returns/NullReturnsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/returns/TrueReturnsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/unary/IncrementsMutator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutantGenerator/operators/unary/IncrementsMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated1343.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated1703.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated180.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated1812.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated1917.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated212.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2152.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2189.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2218.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2258.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2294.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated248.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2574.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2611.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2698.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated270.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated2750.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3170.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3184.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3447.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3454.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3651.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3833.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated3870.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated4012.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated405.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated4073.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated4518.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated4662.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated495.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated4988.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated5066.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated5068.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated5178.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated5199.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated5555.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated56.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated5772.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated585.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6058.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6075.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6162.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6240.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6328.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6750.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated6897.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated697.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7000.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7071.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7408.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7454.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7467.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7603.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated7794.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated8052.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated8370.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated8569.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated8705.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated8707.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated887.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated8909.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9181.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9202.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9222.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9291.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9373.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated949.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9545.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9627.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9773.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/autotest/mutants/StackArMutated9996.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/org/autotest/MutationAnalysisRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/org/autotest/StackTests1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/org/autotest/StackTests2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/org/autotest/StackTests3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.helpers/BinaryOperatorKindToString.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.helpers/UnaryOperatorKindToString.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.helpers/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.helpers/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/ConditionalsBoundaryMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/ConditionalsBoundaryMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/MathMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/MathMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/NegateConditionsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/NegateConditionsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.binary/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.conditionals/FalseConditionalsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.conditionals/FalseConditionalsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.conditionals/TrueConditionalsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.conditionals/TrueConditionalsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.conditionals/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.conditionals/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/MinusOneConstantMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/MinusOneConstantMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/OneConstantMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/OneConstantMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/ZeroConstantMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/ZeroConstantMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.constants/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/EmptyReturnsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/EmptyReturnsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/FalseReturnsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/FalseReturnsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/NullReturnsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/NullReturnsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/TrueReturnsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/TrueReturnsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.returns/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.unary/IncrementsMutator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.unary/IncrementsMutator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.unary/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators.unary/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators/MutationOperator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators/MutationOperator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator.operators/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/Main.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/Mutant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/Mutant.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/MutantsGenerator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/MutantsGenerator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutantGenerator/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1343.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1343.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1703.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1703.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated180.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated180.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1812.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1812.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1917.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated1917.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated212.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated212.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2152.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2152.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2189.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2189.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2218.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2218.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2258.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2258.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2294.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2294.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated248.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated248.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2574.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2574.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2611.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2611.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2698.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2698.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated270.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated270.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2750.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated2750.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3170.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3170.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3184.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3184.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3447.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3447.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3454.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3454.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3651.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3651.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3833.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3833.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3870.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated3870.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4012.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4012.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated405.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated405.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4073.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4073.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4518.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4518.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4662.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4662.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated495.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated495.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4988.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated4988.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5066.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5066.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5068.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5068.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5178.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5178.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5199.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5199.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5555.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5555.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated56.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated56.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5772.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated5772.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated585.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated585.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6058.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6058.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6075.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6075.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6162.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6162.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6240.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6240.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6328.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6328.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6750.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6750.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6897.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated6897.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated697.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated697.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7000.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7000.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7071.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7071.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7408.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7408.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7454.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7454.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7467.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7467.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7603.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7603.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7794.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated7794.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8052.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8052.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8370.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8370.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8569.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8569.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8705.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8705.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8707.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8707.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated887.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated887.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8909.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated8909.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9181.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9181.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9202.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9202.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9222.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9222.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9291.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9291.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9373.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9373.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated949.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated949.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9545.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9545.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9627.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9627.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9773.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9773.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9996.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/StackArMutated9996.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest.mutants/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest/Stack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest/Stack.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest/StackAr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest/StackAr.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/org.autotest/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/org.autotest.StackTests3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/org.autotest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-org.autotest.StackTests3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.7.jar_3a83c50b4a016f281c4e9f3500d16b55/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.7.jar_3a83c50b4a016f281c4e9f3500d16b55/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.7.jar_3a83c50b4a016f281c4e9f3500d16b55/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.7.jar_3a83c50b4a016f281c4e9f3500d16b55/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.7.jar_3a83c50b4a016f281c4e9f3500d16b55/jacocoagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.7.jar_3a83c50b4a016f281c4e9f3500d16b55/org/jacoco/agent/AgentJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_test3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/StackAr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/Mutant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/MutantsGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/helpers/BinaryOperatorKindToString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/helpers/UnaryOperatorKindToString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/MutationOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/binary/ConditionalsBoundaryMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/binary/MathMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/binary/NegateConditionsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/conditionals/FalseConditionalsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/conditionals/TrueConditionalsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/constants/MinusOneConstantMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/constants/OneConstantMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/constants/ZeroConstantMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/returns/EmptyReturnsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/returns/FalseReturnsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/returns/NullReturnsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/returns/TrueReturnsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutantGenerator/operators/unary/IncrementsMutator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated1343.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated1703.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated180.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated1812.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated1917.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated212.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2152.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2189.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2218.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2258.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2294.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated248.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2574.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2611.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2698.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated270.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated2750.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3170.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3184.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3447.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3454.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3651.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3833.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated3870.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated4012.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated405.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated4073.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated4518.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated4662.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated495.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated4988.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated5066.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated5068.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated5178.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated5199.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated5555.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated56.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated5772.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated585.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6058.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6075.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6162.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6240.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6328.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6750.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated6897.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated697.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7000.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7071.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7408.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7454.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7467.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7603.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated7794.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated8052.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated8370.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated8569.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated8705.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated8707.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated887.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated8909.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9181.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9202.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9222.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9291.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9373.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated949.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9545.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9627.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9773.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/autotest/mutants/StackArMutated9996.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotest/MutationAnalysisRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotest/StackTests1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotest/StackTests2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotest/StackTests3.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StackAr" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StackAr" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StackAr" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2mo11OHtlxd5W7Z4lParuqvr1aR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.StackAr [randoop].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/Estudiante/Documentos/isw2_talleres_2c2024/taller 4/StackAr"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle randoop" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="StackAr [randoop]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="randoop" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.StackAr [randoop]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78050df7-9e6d-4dbf-8ae4-a5dd3ddd5de0" name="Changes" comment="" />
+      <created>1727727900853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727727900853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="randoop.main.RandoopBug" package="randoop.main" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

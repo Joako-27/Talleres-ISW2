@@ -1,0 +1,5 @@
+(declare-const k Int)
+(assert (< 0 3))
+(assert (= (+ 5 k) 0))
+(check-sat)
+(get-model)

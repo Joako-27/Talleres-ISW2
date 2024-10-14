@@ -1,0 +1,5 @@
+(declare-const n Int)
+(assert (< 0 n))
+(assert (< 1 n))
+(check-sat)
+(get-model)

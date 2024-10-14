@@ -1,0 +1,2 @@
+5)
+b. 100%, ya que analisamos inputs que nos llevan por todos los posibles caminos del árbol de cómputo

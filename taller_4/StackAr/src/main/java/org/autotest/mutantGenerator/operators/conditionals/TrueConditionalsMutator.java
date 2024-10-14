@@ -21,7 +21,12 @@ public class TrueConditionalsMutator extends MutationOperator {
         if (!super.isToBeProcessed(candidate)) {
             return false;
         }
-        return candidate instanceof CtIf;
+        //return candidate instanceof CtIf;
+        if (candidate instanceof CtIf){
+            CtIf op = (CtIf) candidate;
+            return op.getCondition() != "true";
+        }
+        return false;
     }
 
     @Override

@@ -31,7 +31,7 @@ public class FalseReturnsMutator extends MutationOperator {
         List<String> targetTypes = Collections.singletonList(
                 "boolean"
         );
-        return targetTypes.contains(type);
+        return (targetTypes.contains(type) && op.getReturnedExpression().toString() != "false");
     }
 
     @Override

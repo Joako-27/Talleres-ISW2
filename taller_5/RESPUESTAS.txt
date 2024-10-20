@@ -1,2 +1,6 @@
 5)
 b. 100%, ya que analisamos inputs que nos llevan por todos los posibles caminos del árbol de cómputo
+
+6)
+b. De los 32 caminos en el árbol de computo, 13 son UNSAT, por lo que no podemos acceder a ellos. El
+branch coverage es entonces 40,625%

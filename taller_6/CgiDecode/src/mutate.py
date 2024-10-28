@@ -6,11 +6,16 @@ from src.create_population import create_test_case, get_random_character
 
 def add_character(test_case: str) -> str:
     # TODO: COMPLETAR
+    place_to_add = choice(range(len(test_case)+1))
+    character_to_add = get_random_character()
+    test_case = test_case[:place_to_add] + character_to_add + test_case[place_to_add:]
     return test_case
 
 
 def remove_character(test_case: str) -> str:
     # TODO: COMPLETAR
+    place_to_skip = choice(range(len(test_case)+1))
+    test_case = test_case[:place_to_skip] + test_case[place_to_skip+1:]
     return test_case
 
 

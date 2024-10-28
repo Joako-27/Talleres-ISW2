@@ -5,4 +5,8 @@ from src.get_fitness_cgi_decode import get_fitness_cgi_decode
 def evaluate_population(population: List[List[str]]) -> dict:
     fitness = {}
     # TODO: COMPLETAR
+    for individual in population:
+        fitness_level = get_fitness_cgi_decode(individual)
+        fitness[individual] = fitness_level
+
     return fitness

@@ -10,4 +10,12 @@ def selection(fitness_by_individual: dict, tournament_size: int) -> Tuple[str, f
     winner = None
     # TODO: COMPLETAR
     #  (Tournament selection)
+    participantes = fitness_by_individual.keys()
+    seleccionados = sample(participantes, tournament_size)
+    mayor_fitness = 0
+    for individuo in seleccionados:
+        if fitness_by_individual[individuo] > mayor_fitness:
+            mayor_fitness = fitness_by_individual[individuo]
+            winner = individuo
+
     return winner, fitness_by_individual[winner]

@@ -51,4 +51,84 @@ def has_reached_condition(condition_num: int) -> bool:
 
 def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict], rhs: Union[str, Dict]) -> bool:
     # TODO: COMPLETAR
-    return False
+    result = False
+    distance_true = 0
+    distance_false = 0
+    match op:
+        case "Eq":
+            result = (lhs == rhs)
+            if result:
+                distance_true = 0
+                distance_false = 1
+            else:
+                distance_true = abs(int(str(lhs)) - int(str(rhs)))
+                distance_false = 0
+
+        case "Ne":
+            result = (lhs != rhs)
+            if result:
+                distance_true = 0
+                distance_false = abs(int(str(lhs)) - int(str(rhs)))
+            else:
+                distance_true = 1
+                distance_false = 0
+
+        case "Lt":
+            result = (lhs < rhs)
+            if result:
+                distance_true = 0
+                distance_false = abs(int(str(lhs)) - int(str(rhs)))
+            else:
+                distance_true = abs(int(str(lhs)) - int(str(rhs))) + 1
+                distance_false = 0
+
+        case "Gt":
+            result = (lhs > rhs)
+            if result:
+                distance_true = 0
+                distance_false = abs(int(str(lhs)) - int(str(rhs)))
+            else:
+                distance_true = abs(int(str(lhs)) - int(str(rhs))) + 1
+                distance_false = 0
+
+        case "Le":
+            result = (lhs <= rhs)
+            if result:
+                distance_true = 0
+                distance_false = abs(int(str(lhs)) - int(str(rhs))) + 1
+            else:
+                distance_true = abs(int(str(lhs)) - int(str(rhs)))
+                distance_false = 0
+
+        case "Ge":
+            result = (lhs >= rhs)
+            if result:
+                distance_true = 0
+                distance_false = abs(int(str(lhs)) - int(str(rhs))) + 1
+            else:
+                distance_true = abs(int(str(lhs)) - int(str(rhs)))
+                distance_false = 0
+
+        case "In":
+            result = (lhs in rhs)
+            if result:
+                distance_true = 0
+                distance_false = 1
+            elif len(rhs) == 0:
+                distance_true = sys.maxsize
+                distance_false = 0
+            else:
+                distance_true = get_closest_key(lhs, rhs)
+                distance_false = 0
+
+    update_maps(condition_num, distance_true, distance_false)
+    return result
+
+def get_closest_key(key: str, dic: Dict) -> int:
+    key_value = ord(key)
+    closest_key = sys.maxsize
+    for k in dic:
+        distance = abs(key_value - ord(k))
+        if distance < closest_key:
+            closest_key = distance
+    return closest_key

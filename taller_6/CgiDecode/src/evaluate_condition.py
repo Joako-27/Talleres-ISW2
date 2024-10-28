@@ -61,6 +61,9 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
                 distance_true = 0
                 distance_false = 1
             else:
+                if(type(lhs)== str and type(rhs) == str):
+                    distance_true = abs(ord(lhs) - ord(rhs))
+                    distance_false = 0
                 distance_true = abs(lhs - rhs)
                 distance_false = 0
 

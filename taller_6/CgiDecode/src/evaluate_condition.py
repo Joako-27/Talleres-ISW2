@@ -49,7 +49,7 @@ def has_reached_condition(condition_num: int) -> bool:
     return condition_num in distances_true.keys() or condition_num in distances_false.keys()
 
 
-def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict], rhs: Union[str, Dict]) -> bool:
+def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], rhs: Union[str, Dict, int]) -> bool:
     # TODO: COMPLETAR
     result = False
     distance_true = 0
@@ -61,14 +61,14 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict], rhs: 
                 distance_true = 0
                 distance_false = 1
             else:
-                distance_true = abs(int(str(lhs)) - int(str(rhs)))
+                distance_true = abs(lhs - rhs)
                 distance_false = 0
 
         case "Ne":
             result = (lhs != rhs)
             if result:
                 distance_true = 0
-                distance_false = abs(int(str(lhs)) - int(str(rhs)))
+                distance_false = abs(lhs - rhs)
             else:
                 distance_true = 1
                 distance_false = 0
@@ -77,36 +77,36 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict], rhs: 
             result = (lhs < rhs)
             if result:
                 distance_true = 0
-                distance_false = abs(int(str(lhs)) - int(str(rhs)))
+                distance_false = abs(lhs - rhs)
             else:
-                distance_true = abs(int(str(lhs)) - int(str(rhs))) + 1
+                distance_true = abs(lhs - rhs) + 1
                 distance_false = 0
 
         case "Gt":
             result = (lhs > rhs)
             if result:
                 distance_true = 0
-                distance_false = abs(int(str(lhs)) - int(str(rhs)))
+                distance_false = abs(lhs - rhs)
             else:
-                distance_true = abs(int(str(lhs)) - int(str(rhs))) + 1
+                distance_true = abs(lhs - rhs) + 1
                 distance_false = 0
 
         case "Le":
             result = (lhs <= rhs)
             if result:
                 distance_true = 0
-                distance_false = abs(int(str(lhs)) - int(str(rhs))) + 1
+                distance_false = abs(lhs - rhs) + 1
             else:
-                distance_true = abs(int(str(lhs)) - int(str(rhs)))
+                distance_true = abs(lhs - rhs)
                 distance_false = 0
 
         case "Ge":
             result = (lhs >= rhs)
             if result:
                 distance_true = 0
-                distance_false = abs(int(str(lhs)) - int(str(rhs))) + 1
+                distance_false = abs(lhs - rhs) + 1
             else:
-                distance_true = abs(int(str(lhs)) - int(str(rhs)))
+                distance_true = abs(lhs - rhs)
                 distance_false = 0
 
         case "In":

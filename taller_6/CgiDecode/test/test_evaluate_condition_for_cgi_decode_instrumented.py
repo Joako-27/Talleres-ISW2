@@ -1,8 +1,8 @@
 #!./venv/bin/python
 import unittest
-from src.cgi_decode import cgi_decode
+import src.cgi_decode
 from src.cgi_decode_instrumented import cgi_decode_instrumented
-from src.evaluate_condition import clear_maps, get_true_distance, get_false_distance,distances_false,distances_true
+from src.evaluate_condition import evaluate_condition, clear_maps, get_true_distance, get_false_distance,distances_false,distances_true
 
 
 class TestEvaluateConditionForCgiDecodeInstrumented(unittest.TestCase):

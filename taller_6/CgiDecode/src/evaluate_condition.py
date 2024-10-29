@@ -50,7 +50,6 @@ def has_reached_condition(condition_num: int) -> bool:
 
 
 def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], rhs: Union[str, Dict, int]) -> bool:
-    # TODO: COMPLETAR
     result = False
     distance_true = 0
     distance_false = 0
@@ -64,14 +63,27 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
                 if(type(lhs)== str and type(rhs) == str):
                     distance_true = abs(ord(lhs) - ord(rhs))
                     distance_false = 0
-                distance_true = abs(lhs - rhs)
-                distance_false = 0
+                elif (type(lhs) == str and type(rhs)== dict):
+                    distance_true = get_closest_key(lhs,rhs)
+                    distance_false = 0
+
+                else:
+                    distance_true = abs(lhs - rhs)
+                    distance_false = 0
 
         case "Ne":
             result = (lhs != rhs)
             if result:
-                distance_true = 0
-                distance_false = abs(lhs - rhs)
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = 0
+                    distance_false = abs(ord(lhs)-ord(rhs))
+
+                elif (type(lhs) == str and type(rhs)== dict):
+                    distance_true = 0
+                    distance_false = get_closest_key(lhs,rhs)
+                else:    
+                    distance_true = 0
+                    distance_false = abs(lhs - rhs)
             else:
                 distance_true = 1
                 distance_false = 0
@@ -79,8 +91,12 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
         case "Lt":
             result = (lhs < rhs)
             if result:
-                distance_true = 0
-                distance_false = abs(lhs - rhs)
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = 0
+                    distance_false = abs(ord(lhs)-ord(rhs))
+                else:
+                    distance_true = 0
+                    distance_false = abs(lhs - rhs)
             else:
                 distance_true = abs(lhs - rhs) + 1
                 distance_false = 0
@@ -88,29 +104,53 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
         case "Gt":
             result = (lhs > rhs)
             if result:
-                distance_true = 0
-                distance_false = abs(lhs - rhs)
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = 0
+                    distance_false = abs(ord(lhs)-ord(rhs))
+                else:    
+                    distance_true = 0
+                    distance_false = abs(lhs - rhs)
             else:
-                distance_true = abs(lhs - rhs) + 1
-                distance_false = 0
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = abs(ord(lhs) - ord(rhs)) + 1
+                    distance_false = 0
+                else:    
+                    distance_true = abs(lhs - rhs) + 1  
+                    distance_false = 0
 
         case "Le":
             result = (lhs <= rhs)
             if result:
-                distance_true = 0
-                distance_false = abs(lhs - rhs) + 1
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = 0
+                    distance_false = abs(ord(lhs) - ord(rhs)) + 1
+                else:
+                    distance_true = 0
+                    distance_false = abs(lhs - rhs) + 1
             else:
-                distance_true = abs(lhs - rhs)
-                distance_false = 0
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = abs(ord(lhs)-ord(rhs))
+                    distance_false = 0
+                else:
+                    distance_true = abs(lhs - rhs)
+                    distance_false = 0
 
         case "Ge":
             result = (lhs >= rhs)
             if result:
-                distance_true = 0
-                distance_false = abs(lhs - rhs) + 1
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = 0
+                    distance_false = abs(ord(lhs)-ord(rhs)) + 1
+                else:
+                    distance_true = 0
+                    distance_false = abs(lhs - rhs) + 1
             else:
-                distance_true = abs(lhs - rhs)
-                distance_false = 0
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = abs(ord(lhs)-ord(rhs))
+                    distance_false = 0
+                else:
+                    distance_true = abs(lhs - rhs)
+                    distance_false = 0
 
         case "In":
             result = (lhs in rhs)

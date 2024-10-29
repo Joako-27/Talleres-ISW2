@@ -1,8 +1,8 @@
 from typing import List
 
-from evaluate_condition import clear_maps
-from cgi_decode_instrumented import cgi_decode_instrumented
-from evaluate_condition import distances_false,distances_true
+from src.evaluate_condition import clear_maps
+from src.cgi_decode_instrumented import cgi_decode_instrumented
+from src.evaluate_condition import distances_false,distances_true
 
 def get_fitness_cgi_decode(test_suite: List[str]) -> float:
     # Borro la información de branch coverage de ejecuciones anteriores

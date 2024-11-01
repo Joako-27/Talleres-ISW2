@@ -42,17 +42,21 @@ class GeneticAlgorithm():
 
     def run(self):
         # Generar y evaluar la poblacion inicial
-        population = None # TODO COMPLETAR
-        fitness_by_individual = None # TODO COMPLETAR
+        population = create_population()
+        fitness_by_individual = evaluate_population(population)
+
+
 
         # Imprimir el mejor valor de fitness encontrado
-        self.best_individual = None # TODO COMPLETAR
-        self.fitness_best_individual = None # TODO COMPLETAR
+        best_fitness_and_individual = max(zip(fitness_by_individual.values(), fitness_by_individual.keys()))
+        print("Mejor fitness de generacion", self.generation, ":", best_fitness_and_individual[0])
+        self.best_individual = best_fitness_and_individual[1]
+        self.fitness_best_individual = best_fitness_and_individual[0]
 
         # Continuar mientras la cantidad de generaciones es menor que 1000
         # y no haya ningun individuo que cubra todos los objetivos
 
-        while False: # TODO COMPLETAR
+        while self.generation < 1000: # TODO COMPLETAR
 
             # Producir una nueva poblacion en base a la anterior.
             # Usar selection, crossover y mutation.
@@ -63,9 +67,10 @@ class GeneticAlgorithm():
             population = new_population
 
             # Evaluar la nueva poblacion e imprimir el mejor valor de fitness
-            fitness_by_individual = None # TODO COMPLETAR
-            self.best_individual = None # TODO COMPLETAR
-            self.fitness_best_individual = None # TODO COMPLETAR
+            best_fitness_and_individual = max(zip(fitness_by_individual.values(), fitness_by_individual.keys()))
+            print("Mejor fitness de generacion", self.generation, ":", best_fitness_and_individual[0])
+            self.best_individual = best_fitness_and_individual[1]
+            self.fitness_best_individual = best_fitness_and_individual[0]
 
         # retornar el mejor individuo de la ultima generacion
         return self.best_individual

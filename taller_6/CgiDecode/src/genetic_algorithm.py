@@ -33,7 +33,7 @@ class GeneticAlgorithm():
         new_population = []
         while len(new_population) < self.population_size:
             p1 = selection(fitness_by_individual, self.tournament_size)[0]
-            p2 = selection(fitness_by_individual, self.tournament_size)[0]
+            p2 = selection(fitness_by_individual, self.tournament_size)[0]      #Hay chance de que ambos padres sean el mismo. Lo permitimos ya que aún así los hijos pueden mutar y generar nuevos individuos
             h1, h2 = crossover(p1, p2)      #No está claro para qué sirve el p_crossover si en todos los algoritmos vistos siempre se hace crossover el 100% de las veces y no se pide en la consigna
             new_population.append(h1)
             new_population.append(h2)

@@ -41,34 +41,45 @@ def remove_test_case(individual: List[str]) -> List[str]:
 
 def modify_test_case(individual: List[str]) -> List[str]:
     # TODO: COMPLETAR
+    has_mutated = False
     test_case_to_modify = choice(individual)
-    modification_choice = choice(range(3))
-    match modification_choice:
-            case 0:
-                if len(test_case_to_modify) < 15:
-                    add_character(individual)
-            case 1:
-                if len(test_case_to_modify) > 1:
-                    remove_character(individual)
-            case 2:
-                if len(test_case_to_modify) > 0:
-                    modify_character(individual)
+    while not has_mutated:
+        modification_choice = choice(range(3))
+        match modification_choice:
+                case 0:
+                    if len(test_case_to_modify) < 15:
+                        add_character(individual)
+                        has_mutated = True
+                case 1:
+                    if len(test_case_to_modify) > 1:
+                        remove_character(individual)
+                        has_mutated = True
+                case 2:
+                    if len(test_case_to_modify) > 0:
+                        modify_character(individual)
+                        has_mutated = True
+        #Todo test case puede caer en alguno de estos casos. No hay riesgo de loop infinito
     return individual
 
 
 def mutate(individual: List[str]) -> List[str]:
     # TODO: COMPLETAR
-    mutation_choice = choice(range(3))
-    match mutation_choice:
-        case 0:
-            if len(individual) < 15:
-                add_test_case(individual)
-        case 1:
-            if len(individual) > 1:
-                remove_test_case(individual)
-        case 2:
-            if len(individual) > 0:
-                modify_test_case(individual)
-
+    has_mutated = False
+    while not has_mutated:
+        mutation_choice = choice(range(3))
+        match mutation_choice:
+            case 0:
+                if len(individual) < 15:
+                    add_test_case(individual)
+                    has_mutated = True
+            case 1:
+                if len(individual) > 1:
+                    remove_test_case(individual)
+                    has_mutated = True
+            case 2:
+                if len(individual) > 0:
+                    modify_test_case(individual)
+                    has_mutated = True
+        #Todo individuo puede caer en alguno de estos casos. No hay riesgo de loop infinito
     return individual
 

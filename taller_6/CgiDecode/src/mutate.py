@@ -47,7 +47,7 @@ def modify_test_case(individual: List[str]) -> List[str]:
         modification_choice = choice(range(3))
         match modification_choice:
                 case 0:
-                    if len(test_case_to_modify) < 15:
+                    if len(test_case_to_modify) < 10:
                         add_character(individual)
                         has_mutated = True
                 case 1:

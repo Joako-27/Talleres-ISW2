@@ -15,7 +15,8 @@ class TestGeneticAlgorithm(unittest.TestCase):
         if ga.get_generation() != 1000:
             self.assertEqual(ga.get_fitness_best_individual(), 10)
         print("Test suite:", result)
-        print("Branch coverage:", ga.get_fitness_best_individual()*10, "%")
+        print("Generaciones creadas:", ga.get_generation())
+        print("Branch coverage:", ga.get_fitness_best_individual()*10, "%") #fitness = 10 -> 100% branch coverage
 
     def test2(self):
         # TODO COMPLETAR
@@ -26,6 +27,7 @@ class TestGeneticAlgorithm(unittest.TestCase):
         if ga.get_generation() != 1000:
             self.assertEqual(ga.get_fitness_best_individual(), 10)
         print("Test suite:", result)
+        print("Generaciones creadas:", ga.get_generation())
         print("Branch coverage:", ga.get_fitness_best_individual()*10, "%")
 
     def test3(self):
@@ -37,5 +39,6 @@ class TestGeneticAlgorithm(unittest.TestCase):
         if ga.get_generation() != 1000:
             self.assertEqual(ga.get_fitness_best_individual(), 10)
         print("Test suite:", result)
+        print("Generaciones creadas:", ga.get_generation())
         print("Branch coverage:", ga.get_fitness_best_individual()*10, "%")
 

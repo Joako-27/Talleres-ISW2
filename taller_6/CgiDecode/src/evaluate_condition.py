@@ -53,7 +53,7 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
     result = False
     distance_true = 0
     distance_false = 0
-    match op:
+    match op:       #Calculo distancias true y false segun el tipo de operacion basandonos en los ejemplos dados en la consigna
         case "Eq":
             result = (lhs == rhs)
             if result:
@@ -64,7 +64,7 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
                     distance_true = abs(ord(lhs) - ord(rhs))
                     distance_false = 0
                 elif (type(lhs) == str and type(rhs)== dict):
-                    distance_true = get_closest_key(lhs,rhs)
+                    distance_true = get_distance_closest_key(lhs,rhs)
                     distance_false = 0
 
                 else:
@@ -80,7 +80,7 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
 
                 elif (type(lhs) == str and type(rhs)== dict):
                     distance_true = 0
-                    distance_false = get_closest_key(lhs,rhs)
+                    distance_false = get_distance_closest_key(lhs,rhs)
                 else:    
                     distance_true = 0
                     distance_false = abs(lhs - rhs)
@@ -157,17 +157,14 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
             if result:
                 distance_true = 0
                 distance_false = 1
-            elif len(rhs) == 0:
-                distance_true = sys.maxsize
-                distance_false = 0
             else:
-                distance_true = get_closest_key(lhs, rhs)
+                distance_true = get_distance_closest_key(lhs, rhs)
                 distance_false = 0
 
     update_maps(condition_num, distance_true, distance_false)
     return result
 
-def get_closest_key(key: str, dic: Dict) -> int:
+def get_distance_closest_key(key: str, dic: Dict) -> int:
     key_value = ord(key)
     closest_key = sys.maxsize
     for k in dic:

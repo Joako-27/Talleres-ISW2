@@ -50,7 +50,7 @@ class GeneticAlgorithm():
 
     def covered_all_branches(self, fitness_individual: float) -> bool:
         # TODO COMPLETAR
-        return fitness_individual == 10
+        return fitness_individual == 10     #fitness += 1 por cada distance_true/false = 0. 5 condiciones -> 10 fitness si cubrió todos los branches
 
     def run(self):
         # Generar y evaluar la poblacion inicial

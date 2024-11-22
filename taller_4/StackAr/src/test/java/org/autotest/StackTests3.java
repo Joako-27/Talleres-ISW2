@@ -1,6 +1,7 @@
 package org.autotest;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.eclipse.jdt.internal.core.util.ExceptionAttribute;
 
@@ -94,6 +95,7 @@ public class StackTests3 extends MutationAnalysisRunner {
 
     public void testEquals() throws Exception{
         Stack stack1 = createStack(10);
+        assertTrue(stack1.equals(stack1));
         stack1.push(13);
         stack1.push(14);
         stack1.push(11);
@@ -134,8 +136,14 @@ public class StackTests3 extends MutationAnalysisRunner {
         stack2.push(2);
         stack2.push(3);
         assertEquals(stack1.hashCode(), stack2.hashCode());
-        stack1.pop();
-        assertNotEquals(stack1.hashCode(), stack2.hashCode());
+        Stack stack3 = createStack();
+        final int prime = 31;
+        int result = 1;
+        int elemsHash = -1796951359; //hardcodeado visto en el debugger
+        result = prime * result + elemsHash;
+        result = prime * result - 1;
+        int corr = stack3.hashCode();
+        assertEquals(result, corr);
     }
 
     public void testConstructor() {

@@ -31,7 +31,7 @@ public class NullReturnsMutator extends MutationOperator {
         List<String> targetTypes = Collections.singletonList(
                 "java.lang.Object"
         );
-        return (targetTypes.contains(type) && op.getReturnedExpression().toString() != "null");
+        return (type != null && !type.isPrimitive() && !type.getSimpleName().equals("String"));
     }
 
     @Override

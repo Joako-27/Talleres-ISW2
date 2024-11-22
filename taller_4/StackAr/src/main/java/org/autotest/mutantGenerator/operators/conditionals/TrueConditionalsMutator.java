@@ -8,6 +8,7 @@ import spoon.reflect.declaration.CtElement;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Operador de mutación basado en https://pitest.org/quickstart/mutators/#REMOVE_CONDITIONALS
@@ -24,7 +25,7 @@ public class TrueConditionalsMutator extends MutationOperator {
         //return candidate instanceof CtIf;
         if (candidate instanceof CtIf){
             CtIf op = (CtIf) candidate;
-            return op.getCondition() != "true";
+            return !Objects.equals(op.getCondition().toString(), "true");
         }
         return false;
     }

@@ -1,14 +1,13 @@
 package org.autotest.mutantGenerator.operators.conditionals;
 
 import org.autotest.mutantGenerator.operators.MutationOperator;
-import spoon.reflect.code.BinaryOperatorKind;
-import spoon.reflect.code.CtBinaryOperator;
-import spoon.reflect.code.CtExpression;
-import spoon.reflect.code.CtIf;
+import spoon.reflect.code.*;
 import spoon.reflect.declaration.CtElement;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Operador de mutación basado en https://pitest.org/quickstart/mutators/#REMOVE_CONDITIONALS
@@ -22,12 +21,12 @@ public class FalseConditionalsMutator extends MutationOperator {
         if (!super.isToBeProcessed(candidate)) {
             return false;
         }
-        //return candidate instanceof CtIf;
         if (candidate instanceof CtIf){
             CtIf op = (CtIf) candidate;
-            return op.getCondition() != "false";
+            return !Objects.equals(op.getCondition().toString(), "false");
         }
         return false;
+
     }
 
     @Override

@@ -31,7 +31,7 @@ import java.util.List;
 <span class="nc" id="L31">        List&lt;String&gt; targetTypes = Collections.singletonList(</span>
                 &quot;boolean&quot;
         );
-<span class="nc" id="L34">        return targetTypes.contains(type);</span>
+<span class="nc bnc" id="L34" title="All 4 branches missed.">        return (targetTypes.contains(type) &amp;&amp; op.getReturnedExpression().toString() != &quot;false&quot;);</span>
     }
 
     @Override

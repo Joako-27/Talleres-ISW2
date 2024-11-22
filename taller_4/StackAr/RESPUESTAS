@@ -1,21 +1,24 @@
 EJERCICIO 1
-a) 71 mutantes
+a) 73 mutantes
 b)FalseConditionalsMutator,TrueConditionalsMutator y NegateConditionsMutator generaron 9 mutantes 
-c)ConditionalsBoundaryMutator, EmptyReturnsMutator, IncrementsMutator generaron 3 mutantes. NullReturnsMutator no genero ninguno
+c)NullReturnsMutator genero 2.
 
 EJERCICIO 2
-a) El StackTests1 genero 71 mutantes y encontro muertos a 18 y vivos a 53. El StackTests2 genero 71 mutantes y dejo muertos a 35 y vivos a 36
-b) mutationScore del StackTests1: 25%
-mutationScore del StackTests2: 49%
+a) Se generaron 73 mutantes y StackTests1 encontro muertos a 18 y vivos a 55. El StackTests2 dejo muertos a 35 y vivos a 38, de 71 mutantes generados.
+b) mutationScore del StackTests1: 24%
+mutationScore del StackTests2: 47%
 
 EJERCICIO 3:
-a) Mutation score fue de 80%
-b) Se generaron 71 mutantes, se eliminaron 56 y quedaron vivos 14.
+a) Mutation score fue de 79%
+b) Se generaron 73 mutantes, se eliminaron 65 y quedaron vivos 8.
 c) Los mutantes vivos son todos equivalentes al programa original:
-    Los mutantes 2189, 6897, 9291, 8707, 3184, 1703, 1343 y 6162 modifican a la función hashcode, y los resultados siguen siendo funciones de hash o no generan infecciones
-    Los mutantes 7000, 4988, 5555 y 6240 no cambian nada
-    El mutante 9181 modifica la funcion equals y se saltea el chequeo de ver si los dos stacks son el mismo. No genera falla ya que luego se chequea si contiene los mismos elementos y capacidad.
-    El mutante 9202 modifica la funcion pop, y se saltea el chequeo de ver si el stack está vacío. No causa falla ya que al llamar a la funcion top para devolver el valor se vuelve a chequear si el stack está vacío, y ahí salta la excepción.
+    - StackArMutated3633 (FalseConditionalsMutator: Se reemplazó this == obj por false en la línea 106.)
+        Esta condición chequea sobre una misma instancia del objeto. Si no entro en esta condicion aun asi, se va a cumplir la ultima de las condiciones.
+
+    -StackArMutated3957 (MathMutator: Se reemplazó * por / en la línea 99.)
+        31*1 es lo mismo que 31/1
+
+
 d) 61%
 e) El mutante con menor covertura de instrucciones es el 9773 con 4%, que cambia en el constructor del stack el chequeo de que la capacidad sea < 0 para tirar una excepcion a true.
 Como el mutante tiene un error al tratar de generar el primer stack para el primer test, nunca llega a ejecutar más líneas de código.

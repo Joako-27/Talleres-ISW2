@@ -33,7 +33,7 @@ import java.util.List;
             &quot;java.lang.String&quot;,
             &quot;int&quot;
         );
-<span class="nc" id="L36">        return targetTypes.contains(type);</span>
+<span class="nc bnc" id="L36" title="All 4 branches missed.">        return (targetTypes.contains(type) &amp;&amp; (op.getReturnedExpression().toString() != getEmptyValueForReturnExpression(op).toString()));</span>
     }
 
     @Override

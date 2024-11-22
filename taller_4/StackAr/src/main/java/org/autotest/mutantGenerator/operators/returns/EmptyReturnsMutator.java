@@ -33,7 +33,7 @@ public class EmptyReturnsMutator extends MutationOperator {
             "java.lang.String",
             "int"
         );
-        return (targetTypes.contains(type) && (op.getReturnedExpression().toString() != getEmptyValueForReturnExpression(op).toString());
+        return (targetTypes.contains(type) && (op.getReturnedExpression().toString() != getEmptyValueForReturnExpression(op).toString()));
     }
 
     @Override

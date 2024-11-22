@@ -31,7 +31,7 @@ import java.util.List;
 <span class="nc" id="L31">        List&lt;String&gt; targetTypes = Collections.singletonList(</span>
                 &quot;java.lang.Object&quot;
         );
-<span class="nc" id="L34">        return targetTypes.contains(type);</span>
+<span class="nc bnc" id="L34" title="All 6 branches missed.">        return (type != null &amp;&amp; !type.isPrimitive() &amp;&amp; !type.getSimpleName().equals(&quot;String&quot;));</span>
     }
 
     @Override

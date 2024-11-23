@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.autotest.generated.RegressionTest75" tests="50" skipped="0" failures="0" errors="0" timestamp="2024-11-23T00:16:13" hostname="pc23" time="0.007">
+  <properties/>
+  <testcase name="test3751()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3752()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3753()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3754()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3755()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3756()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3757()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3758()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3759()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3760()" classname="org.autotest.generated.RegressionTest75" time="0.001"/>
+  <testcase name="test3761()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3762()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3763()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3764()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3765()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3766()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3767()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3768()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3769()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3770()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3771()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3772()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3773()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3774()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3775()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3776()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3777()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3778()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3779()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3780()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3781()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3782()" classname="org.autotest.generated.RegressionTest75" time="0.001"/>
+  <testcase name="test3783()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3784()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3785()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3786()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3787()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3788()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3789()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3790()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3791()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3792()" classname="org.autotest.generated.RegressionTest75" time="0.001"/>
+  <testcase name="test3793()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3794()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3795()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3796()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3797()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3798()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3799()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <testcase name="test3800()" classname="org.autotest.generated.RegressionTest75" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

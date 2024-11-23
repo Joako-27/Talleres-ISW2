@@ -13,9 +13,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     public static boolean debug = false;
 
     @Test
-    public void test051() throws Throwable {
+    public void test0051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test051");
+            System.out.format("%n%s%n", "RegressionTest1.test0051");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isFull();
         boolean boolean3 = stackAr1.isEmpty();
@@ -31,9 +31,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test052() throws Throwable {
+    public void test0052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test052");
+            System.out.format("%n%s%n", "RegressionTest1.test0052");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isEmpty();
         int int3 = stackAr1.size();
@@ -53,9 +53,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test053() throws Throwable {
+    public void test0053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test053");
+            System.out.format("%n%s%n", "RegressionTest1.test0053");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isFull();
         java.lang.String str3 = stackAr1.toString();
@@ -84,9 +84,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test054() throws Throwable {
+    public void test0054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test054");
+            System.out.format("%n%s%n", "RegressionTest1.test0054");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isEmpty();
         int int3 = stackAr1.size();
@@ -102,9 +102,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test055() throws Throwable {
+    public void test0055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test055");
+            System.out.format("%n%s%n", "RegressionTest1.test0055");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -159,9 +159,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test056() throws Throwable {
+    public void test0056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test056");
+            System.out.format("%n%s%n", "RegressionTest1.test0056");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -191,9 +191,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test057() throws Throwable {
+    public void test0057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test057");
+            System.out.format("%n%s%n", "RegressionTest1.test0057");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean3 = stackAr1.equals((java.lang.Object) 1.0d);
         boolean boolean5 = stackAr1.equals((java.lang.Object) 1.0d);
@@ -209,9 +209,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test058() throws Throwable {
+    public void test0058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test058");
+            System.out.format("%n%s%n", "RegressionTest1.test0058");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         int int2 = stackAr1.size();
         org.autotest.Stack stackAr4 = createStack((int) 'a');
@@ -231,9 +231,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test059() throws Throwable {
+    public void test0059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test059");
+            System.out.format("%n%s%n", "RegressionTest1.test0059");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         int int3 = stackAr1.size();
@@ -254,9 +254,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test060() throws Throwable {
+    public void test0060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test060");
+            System.out.format("%n%s%n", "RegressionTest1.test0060");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -300,9 +300,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test061() throws Throwable {
+    public void test0061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test061");
+            System.out.format("%n%s%n", "RegressionTest1.test0061");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 100);
         java.lang.String str2 = stackAr1.toString();
         // The following exception was thrown during execution in test generation
@@ -316,9 +316,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test062() throws Throwable {
+    public void test0062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test062");
+            System.out.format("%n%s%n", "RegressionTest1.test0062");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isFull();
         java.lang.String str3 = stackAr1.toString();
@@ -333,9 +333,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test063() throws Throwable {
+    public void test0063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test063");
+            System.out.format("%n%s%n", "RegressionTest1.test0063");
         org.autotest.Stack stackAr1 = createStack(10);
         int int2 = stackAr1.size();
         org.autotest.Stack stackAr4 = createStack((int) 'a');
@@ -366,9 +366,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test064() throws Throwable {
+    public void test0064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test064");
+            System.out.format("%n%s%n", "RegressionTest1.test0064");
         org.autotest.Stack stackAr1 = createStack(10);
         int int2 = stackAr1.size();
         org.autotest.Stack stackAr4 = createStack((int) 'a');
@@ -401,9 +401,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test065() throws Throwable {
+    public void test0065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test065");
+            System.out.format("%n%s%n", "RegressionTest1.test0065");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         boolean boolean3 = stackAr1.isEmpty();
@@ -427,9 +427,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test066() throws Throwable {
+    public void test0066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test066");
+            System.out.format("%n%s%n", "RegressionTest1.test0066");
         org.autotest.Stack stackAr0 = createStack();
         boolean boolean1 = stackAr0.isEmpty();
         org.autotest.Stack stackAr3 = createStack((int) (byte) 1);
@@ -449,9 +449,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test067() throws Throwable {
+    public void test0067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test067");
+            System.out.format("%n%s%n", "RegressionTest1.test0067");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -500,9 +500,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test068() throws Throwable {
+    public void test0068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test068");
+            System.out.format("%n%s%n", "RegressionTest1.test0068");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isEmpty();
         java.lang.String str3 = stackAr1.toString();
@@ -522,9 +522,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test069() throws Throwable {
+    public void test0069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test069");
+            System.out.format("%n%s%n", "RegressionTest1.test0069");
         org.autotest.Stack stackAr1 = createStack((int) ' ');
         java.lang.String str2 = stackAr1.toString();
         org.autotest.Stack stackAr4 = createStack((int) (byte) 1);
@@ -553,9 +553,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test070() throws Throwable {
+    public void test0070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test070");
+            System.out.format("%n%s%n", "RegressionTest1.test0070");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isEmpty();
         boolean boolean3 = stackAr1.isFull();
@@ -579,9 +579,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test071() throws Throwable {
+    public void test0071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test071");
+            System.out.format("%n%s%n", "RegressionTest1.test0071");
         org.autotest.Stack stackAr1 = createStack(100);
         boolean boolean2 = stackAr1.isFull();
         org.autotest.Stack stackAr4 = createStack(10);
@@ -613,9 +613,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test072() throws Throwable {
+    public void test0072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test072");
+            System.out.format("%n%s%n", "RegressionTest1.test0072");
         org.autotest.Stack stackAr1 = createStack((int) (short) 1);
         // The following exception was thrown during execution in test generation
         try {
@@ -627,9 +627,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test073() throws Throwable {
+    public void test0073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test073");
+            System.out.format("%n%s%n", "RegressionTest1.test0073");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean3 = stackAr1.equals((java.lang.Object) 1.0d);
         int int4 = stackAr1.size();
@@ -645,9 +645,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test074() throws Throwable {
+    public void test0074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test074");
+            System.out.format("%n%s%n", "RegressionTest1.test0074");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 10);
         boolean boolean2 = stackAr1.isEmpty();
         boolean boolean3 = stackAr1.isFull();
@@ -663,9 +663,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test075() throws Throwable {
+    public void test0075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test075");
+            System.out.format("%n%s%n", "RegressionTest1.test0075");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         boolean boolean3 = stackAr1.isEmpty();
@@ -682,9 +682,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test076() throws Throwable {
+    public void test0076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test076");
+            System.out.format("%n%s%n", "RegressionTest1.test0076");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 10);
         java.lang.String str2 = stackAr1.toString();
         java.lang.String str3 = stackAr1.toString();
@@ -715,9 +715,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test077() throws Throwable {
+    public void test0077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test077");
+            System.out.format("%n%s%n", "RegressionTest1.test0077");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         boolean boolean3 = stackAr1.isEmpty();
@@ -761,9 +761,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test078() throws Throwable {
+    public void test0078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test078");
+            System.out.format("%n%s%n", "RegressionTest1.test0078");
         org.autotest.Stack stackAr1 = createStack((int) ' ');
         java.lang.String str2 = stackAr1.toString();
         // The following exception was thrown during execution in test generation
@@ -777,53 +777,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test079() throws Throwable {
+    public void test0079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test079");
-        org.autotest.Stack stackAr1 = createStack((int) '#');
-        int int2 = stackAr1.size();
-        org.autotest.Stack stackAr4 = createStack((int) 'a');
-        boolean boolean5 = stackAr4.isFull();
-        java.lang.Object obj6 = null;
-        boolean boolean7 = stackAr4.equals(obj6);
-        stackAr1.push((java.lang.Object) boolean7);
-        boolean boolean9 = stackAr1.isFull();
-        org.autotest.Stack stackAr11 = createStack((int) 'a');
-        boolean boolean12 = stackAr11.isFull();
-        int int13 = stackAr11.size();
-        org.autotest.Stack stackAr15 = createStack((int) (byte) 1);
-        int int16 = stackAr15.size();
-        boolean boolean17 = stackAr15.isEmpty();
-        boolean boolean18 = stackAr15.isFull();
-        int int19 = stackAr15.size();
-        boolean boolean20 = stackAr15.isFull();
-        java.lang.String str21 = stackAr15.toString();
-        boolean boolean22 = stackAr15.isFull();
-        stackAr11.push((java.lang.Object) boolean22);
-        stackAr11.push((java.lang.Object) 100.0f);
-        boolean boolean26 = stackAr11.isEmpty();
-        boolean boolean27 = stackAr1.equals((java.lang.Object) boolean26);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 0 + "'", int16 == 0);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "[]" + "'", str21, "[]");
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-    }
-
-    @Test
-    public void test080() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test080");
+            System.out.format("%n%s%n", "RegressionTest1.test0079");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isEmpty();
         int int3 = stackAr1.size();
@@ -851,9 +807,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test081() throws Throwable {
+    public void test0080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test081");
+            System.out.format("%n%s%n", "RegressionTest1.test0080");
         org.autotest.Stack stackAr1 = createStack((int) ' ');
         java.lang.String str2 = stackAr1.toString();
         int int3 = stackAr1.size();
@@ -873,9 +829,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test082() throws Throwable {
+    public void test0081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test082");
+            System.out.format("%n%s%n", "RegressionTest1.test0081");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -921,9 +877,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test083() throws Throwable {
+    public void test0082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test083");
+            System.out.format("%n%s%n", "RegressionTest1.test0082");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         int int3 = stackAr1.size();
@@ -965,9 +921,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test084() throws Throwable {
+    public void test0083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test084");
+            System.out.format("%n%s%n", "RegressionTest1.test0083");
         org.autotest.Stack stackAr0 = createStack();
         boolean boolean1 = stackAr0.isEmpty();
         // The following exception was thrown during execution in test generation
@@ -981,9 +937,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test085() throws Throwable {
+    public void test0084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test085");
+            System.out.format("%n%s%n", "RegressionTest1.test0084");
         org.autotest.Stack stackAr0 = createStack();
         java.lang.String str1 = stackAr0.toString();
         // The following exception was thrown during execution in test generation
@@ -997,9 +953,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test0085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test086");
+            System.out.format("%n%s%n", "RegressionTest1.test0085");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         boolean boolean3 = stackAr1.isEmpty();
@@ -1021,9 +977,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test0086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test087");
+            System.out.format("%n%s%n", "RegressionTest1.test0086");
         org.autotest.Stack stackAr1 = createStack(0);
         int int2 = stackAr1.size();
         // The following exception was thrown during execution in test generation
@@ -1037,9 +993,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test0087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test088");
+            System.out.format("%n%s%n", "RegressionTest1.test0087");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         java.lang.String str3 = stackAr1.toString();
@@ -1059,9 +1015,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test0088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test089");
+            System.out.format("%n%s%n", "RegressionTest1.test0088");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         int int2 = stackAr1.size();
         java.lang.String str3 = stackAr1.toString();
@@ -1077,9 +1033,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test090() throws Throwable {
+    public void test0089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test090");
+            System.out.format("%n%s%n", "RegressionTest1.test0089");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         int int2 = stackAr1.size();
         boolean boolean3 = stackAr1.isEmpty();
@@ -1107,9 +1063,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test091() throws Throwable {
+    public void test0090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test091");
+            System.out.format("%n%s%n", "RegressionTest1.test0090");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -1198,9 +1154,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test0091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test092");
+            System.out.format("%n%s%n", "RegressionTest1.test0091");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -1249,9 +1205,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test0092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test093");
+            System.out.format("%n%s%n", "RegressionTest1.test0092");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -1268,9 +1224,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test094() throws Throwable {
+    public void test0093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test094");
+            System.out.format("%n%s%n", "RegressionTest1.test0093");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -1311,9 +1267,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test0094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test095");
+            System.out.format("%n%s%n", "RegressionTest1.test0094");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isEmpty();
         boolean boolean3 = stackAr1.isEmpty();
@@ -1324,53 +1280,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test0095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test096");
-        org.autotest.Stack stackAr1 = createStack((int) 'a');
-        boolean boolean2 = stackAr1.isFull();
-        java.lang.Object obj3 = null;
-        boolean boolean4 = stackAr1.equals(obj3);
-        boolean boolean5 = stackAr1.isFull();
-        org.autotest.Stack stackAr7 = createStack((int) (byte) 1);
-        int int8 = stackAr7.size();
-        int int9 = stackAr7.size();
-        org.autotest.Stack stackAr11 = createStack((int) (byte) 1);
-        int int12 = stackAr11.size();
-        boolean boolean13 = stackAr11.isEmpty();
-        boolean boolean14 = stackAr11.isFull();
-        int int15 = stackAr11.size();
-        boolean boolean16 = stackAr11.isFull();
-        org.autotest.Stack stackAr18 = createStack((int) 'a');
-        boolean boolean20 = stackAr18.equals((java.lang.Object) 1.0d);
-        java.lang.String str21 = stackAr18.toString();
-        stackAr11.push((java.lang.Object) stackAr18);
-        stackAr7.push((java.lang.Object) stackAr18);
-        boolean boolean24 = stackAr1.equals((java.lang.Object) stackAr18);
-        java.lang.Object obj25 = new java.lang.Object();
-        boolean boolean26 = stackAr18.equals(obj25);
-        int int27 = stackAr18.size();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 0 + "'", int15 == 0);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "[]" + "'", str21, "[]");
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + int27 + "' != '" + 0 + "'", int27 == 0);
-    }
-
-    @Test
-    public void test097() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test097");
+            System.out.format("%n%s%n", "RegressionTest1.test0095");
         org.autotest.Stack stackAr1 = createStack((int) (byte) 1);
         boolean boolean2 = stackAr1.isFull();
         java.lang.String str3 = stackAr1.toString();
@@ -1383,9 +1295,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test098() throws Throwable {
+    public void test0096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test098");
+            System.out.format("%n%s%n", "RegressionTest1.test0096");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -1440,9 +1352,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test0097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test099");
+            System.out.format("%n%s%n", "RegressionTest1.test0097");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         int int3 = stackAr1.size();
@@ -1453,9 +1365,9 @@ public class RegressionTest1 extends MutationAnalysisRunner {
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test0098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest1.test100");
+            System.out.format("%n%s%n", "RegressionTest1.test0098");
         org.autotest.Stack stackAr1 = createStack((int) 'a');
         boolean boolean2 = stackAr1.isFull();
         java.lang.Object obj3 = null;
@@ -1499,6 +1411,154 @@ public class RegressionTest1 extends MutationAnalysisRunner {
         org.junit.Assert.assertEquals("'" + str21 + "' != '" + "[]" + "'", str21, "[]");
         org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
         org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test0099() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0099");
+        org.autotest.Stack stackAr1 = createStack((int) 'a');
+        boolean boolean2 = stackAr1.isFull();
+        java.lang.Object obj3 = null;
+        boolean boolean4 = stackAr1.equals(obj3);
+        boolean boolean5 = stackAr1.isFull();
+        org.autotest.Stack stackAr7 = createStack((int) (byte) 1);
+        int int8 = stackAr7.size();
+        int int9 = stackAr7.size();
+        boolean boolean10 = stackAr1.equals((java.lang.Object) stackAr7);
+        org.autotest.Stack stackAr12 = createStack((int) 'a');
+        boolean boolean13 = stackAr12.isFull();
+        java.lang.Object obj14 = null;
+        boolean boolean15 = stackAr12.equals(obj14);
+        boolean boolean16 = stackAr12.isFull();
+        org.autotest.Stack stackAr18 = createStack((int) (byte) 1);
+        int int19 = stackAr18.size();
+        int int20 = stackAr18.size();
+        org.autotest.Stack stackAr22 = createStack((int) (byte) 1);
+        int int23 = stackAr22.size();
+        boolean boolean24 = stackAr22.isEmpty();
+        boolean boolean25 = stackAr22.isFull();
+        int int26 = stackAr22.size();
+        boolean boolean27 = stackAr22.isFull();
+        org.autotest.Stack stackAr29 = createStack((int) 'a');
+        boolean boolean31 = stackAr29.equals((java.lang.Object) 1.0d);
+        java.lang.String str32 = stackAr29.toString();
+        stackAr22.push((java.lang.Object) stackAr29);
+        stackAr18.push((java.lang.Object) stackAr29);
+        boolean boolean35 = stackAr12.equals((java.lang.Object) stackAr29);
+        org.autotest.Stack stackAr37 = createStack((int) (byte) 1);
+        boolean boolean38 = stackAr37.isEmpty();
+        boolean boolean39 = stackAr37.isFull();
+        int int40 = stackAr37.size();
+        boolean boolean41 = stackAr37.isFull();
+        boolean boolean42 = stackAr12.equals((java.lang.Object) stackAr37);
+        boolean boolean43 = stackAr7.equals((java.lang.Object) stackAr37);
+        org.autotest.Stack stackAr45 = createStack((int) ' ');
+        java.lang.String str46 = stackAr45.toString();
+        int int47 = stackAr45.size();
+        boolean boolean48 = stackAr45.isFull();
+        java.lang.Object obj49 = null;
+        stackAr45.push(obj49);
+        stackAr7.push((java.lang.Object) stackAr45);
+        boolean boolean52 = stackAr7.isFull();
+        java.lang.String str53 = stackAr7.toString();
+        org.autotest.Stack stackAr55 = createStack((int) 'a');
+        int int56 = stackAr55.size();
+        org.autotest.Stack stackAr58 = createStack((int) 'a');
+        int int59 = stackAr58.size();
+        boolean boolean60 = stackAr58.isFull();
+        stackAr55.push((java.lang.Object) stackAr58);
+        java.lang.Object obj62 = stackAr55.pop();
+        boolean boolean63 = stackAr55.isEmpty();
+        org.autotest.Stack stackAr65 = createStack((int) (byte) 1);
+        boolean boolean66 = stackAr65.isEmpty();
+        java.lang.String str67 = stackAr65.toString();
+        int int68 = stackAr65.size();
+        java.lang.String str69 = stackAr65.toString();
+        boolean boolean70 = stackAr55.equals((java.lang.Object) stackAr65);
+        // The following exception was thrown during execution in test generation
+        try {
+            stackAr7.push((java.lang.Object) boolean70);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: null");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 0 + "'", int20 == 0);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 0 + "'", int23 == 0);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 0 + "'", int26 == 0);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertEquals("'" + str32 + "' != '" + "[]" + "'", str32, "[]");
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 0 + "'", int40 == 0);
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertEquals("'" + str46 + "' != '" + "[]" + "'", str46, "[]");
+        org.junit.Assert.assertTrue("'" + int47 + "' != '" + 0 + "'", int47 == 0);
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + false + "'", boolean48 == false);
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + true + "'", boolean52 == true);
+        org.junit.Assert.assertEquals("'" + str53 + "' != '" + "[[null]]" + "'", str53, "[[null]]");
+        org.junit.Assert.assertTrue("'" + int56 + "' != '" + 0 + "'", int56 == 0);
+        org.junit.Assert.assertTrue("'" + int59 + "' != '" + 0 + "'", int59 == 0);
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + false + "'", boolean60 == false);
+        org.junit.Assert.assertNotNull(obj62);
+        org.junit.Assert.assertEquals(obj62.toString(), "[]");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(obj62), "[]");
+        org.junit.Assert.assertEquals(java.util.Objects.toString(obj62), "[]");
+        org.junit.Assert.assertTrue("'" + boolean63 + "' != '" + true + "'", boolean63 == true);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + true + "'", boolean66 == true);
+        org.junit.Assert.assertEquals("'" + str67 + "' != '" + "[]" + "'", str67, "[]");
+        org.junit.Assert.assertTrue("'" + int68 + "' != '" + 0 + "'", int68 == 0);
+        org.junit.Assert.assertEquals("'" + str69 + "' != '" + "[]" + "'", str69, "[]");
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
+    }
+
+    @Test
+    public void test0100() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0100");
+        org.autotest.Stack stackAr1 = createStack(10);
+        int int2 = stackAr1.size();
+        org.autotest.Stack stackAr4 = createStack((int) 'a');
+        boolean boolean5 = stackAr4.isFull();
+        org.autotest.Stack stackAr7 = createStack((int) (byte) 1);
+        int int8 = stackAr7.size();
+        boolean boolean9 = stackAr7.isEmpty();
+        boolean boolean10 = stackAr7.isFull();
+        boolean boolean11 = stackAr7.isFull();
+        int int12 = stackAr7.size();
+        stackAr4.push((java.lang.Object) stackAr7);
+        boolean boolean14 = stackAr1.equals((java.lang.Object) stackAr7);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj15 = stackAr7.top();
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: null");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
     }
 }
 

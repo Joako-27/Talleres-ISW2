@@ -1,36 +1,38 @@
 EJERCICIO 1
-a) 73 mutantes
+a) 69 mutantes
 b)FalseConditionalsMutator,TrueConditionalsMutator y NegateConditionsMutator generaron 9 mutantes 
 c)NullReturnsMutator genero 2.
 
 EJERCICIO 2
-a) Se generaron 73 mutantes y StackTests1 encontro muertos a 18 y vivos a 55. El StackTests2 dejo muertos a 35 y vivos a 38, de 71 mutantes generados.
-b) mutationScore del StackTests1: 24%
-mutationScore del StackTests2: 47%
+a) Se generaron 69 mutantes y StackTests1 encontro muertos a 18 y vivos a 51. El StackTests2 dejo muertos a 35 y vivos a 34, de 71 mutantes generados.
+b) mutationScore del StackTests1: 26%
+mutationScore del StackTests2: 50%
 
 EJERCICIO 3:
-a) Mutation score fue de 79%
-b) Se generaron 73 mutantes, se eliminaron 65 y quedaron vivos 8.
+a) Mutation score fue de 94%
+b) Se generaron 69 mutantes, se eliminaron 65 y quedaron vivos 4.
 c) Los mutantes vivos son todos equivalentes al programa original:
-    - StackArMutated3633 (FalseConditionalsMutator: Se reemplazó this == obj por false en la línea 106.)
+    - (FalseConditionalsMutator: Se reemplazó this == obj por false en la línea 106.)
         Esta condición chequea sobre una misma instancia del objeto. Si no entro en esta condicion aun asi, se va a cumplir la ultima de las condiciones.
 
-    -StackArMutated3957 (MathMutator: Se reemplazó * por / en la línea 99.)
+    -(MathMutator: Se reemplazó * por / en la línea 99.)
         31*1 es lo mismo que 31/1
-
-
-d) 61%
-e) El mutante con menor covertura de instrucciones es el 9773 con 4%, que cambia en el constructor del stack el chequeo de que la capacidad sea < 0 para tirar una excepcion a true.
+    -(FalseConditionalsMutator: Se reemplazó isEmpty() por false en la línea 78.)
+        Lo que ocurre aca, es que cuando llamamos a top() se chequea isEmpty().
+    -(TrueReturnsMutator: Se reemplazó readIndex == other.readIndex por true en la línea 115.)
+        Si la ejecucion llego a ese punto, esa condicion siempre sera True.
+d) 19%
+e) El mutante con menor covertura de instrucciones es el StackArMutated3352 con 3%, que cambia en el constructor del stack el chequeo de que la capacidad sea < 0 para tirar una excepcion a true.
 Como el mutante tiene un error al tratar de generar el primer stack para el primer test, nunca llega a ejecutar más líneas de código.
 
 EJERCICIO 4:
-a) Se generaron 1001 tests
+a) Se generaron 1011 tests
 b) No falló ninguno
-c) 83%
+c) 71%
 
 EJERCICIO 5:
 a) La funcion pop no eliminaba el elemento del array.
 b) 71%
 
 EJERCICIO 6:
-El mutation score fue del 76%
+El mutation score fue del 81%

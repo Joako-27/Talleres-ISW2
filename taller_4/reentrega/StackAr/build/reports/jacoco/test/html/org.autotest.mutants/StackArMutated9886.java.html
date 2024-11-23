@@ -8,18 +8,18 @@ public class StackArMutated9886 extends org.autotest.Stack {
 
     private final java.lang.Object[] elems;
 
-<span class="nc" id="L11">    private int readIndex = -1;</span>
+<span class="fc" id="L11">    private int readIndex = -1;</span>
 
     public StackArMutated9886() {
 <span class="nc" id="L14">        this(org.autotest.mutants.StackArMutated9886.DEFAULT_CAPACITY);</span>
 <span class="nc" id="L15">    }</span>
 
-<span class="nc" id="L17">    public StackArMutated9886(int capacity) throws java.lang.IllegalArgumentException {</span>
-<span class="nc bnc" id="L18" title="All 2 branches missed.">        if (capacity &lt; 0) {</span>
+<span class="fc" id="L17">    public StackArMutated9886(int capacity) throws java.lang.IllegalArgumentException {</span>
+<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        if (capacity &lt; 0) {</span>
 <span class="nc" id="L19">            throw new java.lang.IllegalArgumentException();</span>
         }
-<span class="nc" id="L21">        this.elems = new java.lang.Object[capacity];</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L21">        this.elems = new java.lang.Object[capacity];</span>
+<span class="fc" id="L22">    }</span>
 
     /**
      * El &quot;invariante de representación&quot; de una clase es una propiedad que deben cumplir todas las instancias de la clase.
@@ -63,7 +63,7 @@ public class StackArMutated9886 extends org.autotest.Stack {
     }
 
     public boolean isFull() {
-<span class="nc" id="L66">        return true;</span>
+<span class="fc" id="L66">        return true;</span>
     }
 
     public void push(java.lang.Object o) throws java.lang.IllegalStateException {

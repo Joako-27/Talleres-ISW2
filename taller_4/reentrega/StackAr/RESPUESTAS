@@ -26,7 +26,7 @@ e) El mutante con menor covertura de instrucciones es el StackArMutated3352 con 
 Como el mutante tiene un error al tratar de generar el primer stack para el primer test, nunca llega a ejecutar más líneas de código.
 
 EJERCICIO 4:
-a) Se generaron 3837 tests
+a) Se generaron 1011 tests
 b) No falló ninguno
 c) 71%
 
@@ -35,4 +35,4 @@ a) La funcion pop no eliminaba el elemento del array.
 b) 71%
 
 EJERCICIO 6:
-El mutation score fue del 76%
+El mutation score fue del 81%

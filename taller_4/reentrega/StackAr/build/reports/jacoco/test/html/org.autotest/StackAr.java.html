@@ -94,18 +94,18 @@ public class StackAr extends Stack {
 
 	@Override
 	public int hashCode() {
-<span class="nc" id="L97">		final int prime = 31;</span>
-<span class="nc" id="L98">		int result = 1;</span>
-<span class="nc" id="L99">		int h = Arrays.hashCode(elems);</span>
-<span class="nc" id="L100">		result = prime * result + h;</span>
-<span class="nc" id="L101">		result = prime * result + readIndex;</span>
-<span class="nc" id="L102">		return result;</span>
+<span class="fc" id="L97">		final int prime = 31;</span>
+<span class="fc" id="L98">		int result = 1;</span>
+<span class="fc" id="L99">		int h = Arrays.hashCode(elems);</span>
+<span class="fc" id="L100">		result = prime * result + h;</span>
+<span class="fc" id="L101">		result = prime * result + readIndex;</span>
+<span class="fc" id="L102">		return result;</span>
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-<span class="pc bpc" id="L107" title="1 of 2 branches missed.">		if (this == obj)</span>
-<span class="nc" id="L108">			return true;</span>
+<span class="fc bfc" id="L107" title="All 2 branches covered.">		if (this == obj)</span>
+<span class="fc" id="L108">			return true;</span>
 <span class="fc bfc" id="L109" title="All 2 branches covered.">		if (obj == null)</span>
 <span class="fc" id="L110">			return false;</span>
 <span class="fc bfc" id="L111" title="All 2 branches covered.">		if (getClass() != obj.getClass())</span>
@@ -113,7 +113,7 @@ public class StackAr extends Stack {
 <span class="fc" id="L113">		StackAr other = (StackAr) obj;</span>
 <span class="fc bfc" id="L114" title="All 2 branches covered.">		if (!Arrays.equals(elems, other.elems))</span>
 <span class="fc" id="L115">			return false;</span>
-<span class="fc bfc" id="L116" title="All 2 branches covered.">        return readIndex == other.readIndex;</span>
+<span class="pc bpc" id="L116" title="1 of 2 branches missed.">        return readIndex == other.readIndex;</span>
     }
 
 	@Override

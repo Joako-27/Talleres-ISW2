@@ -7,6 +7,6 @@ def evaluate_population(population: List[List[str]]) -> dict:
     # TODO: COMPLETAR
     for individual in population:
         fitness_level = get_fitness_cgi_decode(individual)
-        fitness[individual] = fitness_level
+        fitness[tuple(individual)] = fitness_level
 
     return fitness

@@ -6,9 +6,12 @@ from src.create_population import create_test_case, get_random_character
 
 def add_character(test_case: str) -> str:
     # TODO: COMPLETAR
-    place_to_add = choice(range(len(test_case)))
-    character_to_add = get_random_character()
-    test_case = test_case[:place_to_add] + character_to_add + test_case[place_to_add:]
+    if len(test_case) == 0:
+        place_to_add = 0
+    else:
+        place_to_add = choice(range(len(test_case)))
+    character_to_add = str(get_random_character())
+    test_case = str(test_case[:place_to_add]) + character_to_add + str(test_case[place_to_add:])
     return test_case
 
 
@@ -21,10 +24,10 @@ def remove_character(test_case: str) -> str:
 
 def modify_character(test_case: str) -> str:
     # TODO: COMPLETAR
-    place_to_add = choice(range(len(test_case)-1))
-    character_to_add = get_random_character()
-    test_case = test_case[:place_to_add] + character_to_add + test_case[place_to_add+1:]
-    return test_case
+    place_to_add = choice(range(len(test_case)))
+    character_to_add = str(get_random_character())
+    test_case = str(test_case[:place_to_add]) + character_to_add + str(test_case[place_to_add+1:])
+    return str(test_case)
 
 
 def add_test_case(individual: List[str]) -> List[str]:
@@ -48,15 +51,15 @@ def modify_test_case(individual: List[str]) -> List[str]:
         match modification_choice:
                 case 0:
                     if len(test_case_to_modify) < 10:
-                        add_character(individual)
+                        add_character(test_case_to_modify)
                         has_mutated = True
                 case 1:
                     if len(test_case_to_modify) > 1:
-                        remove_character(individual)
+                        remove_character(test_case_to_modify)
                         has_mutated = True
                 case 2:
                     if len(test_case_to_modify) > 0:
-                        modify_character(individual)
+                        modify_character(test_case_to_modify)
                         has_mutated = True
         #Todo test case puede caer en alguno de estos casos. No hay riesgo de loop infinito
     return individual

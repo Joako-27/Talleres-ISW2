@@ -11,24 +11,19 @@ def get_fitness_cgi_decode(test_suite: List[str]) -> float:
 
     fitness = 0
     for test in test_suite:
-
-        cgi_decode_instrumented(test)
-        for key in distances_false:
-            d_false = distances_false[key]
-            d_true = distances_true[key]
-            if(d_false != 0):
-                d_false = d_false/(d_false+1)
-            else: 
-                d_false = 1
-            if(d_true != 0):
-                d_true = d_true/(d_true+1)
-            else:
-                d_true = 1
-            fitness += d_true
-            fitness += d_false
-
-
+        try:
+            cgi_decode_instrumented(test)
+        except:
+            fitness = fitness #no me importa si tira una excepcion
+    for key in distances_false:
+        d_false = distances_false[key]
+        d_true = distances_true[key]
+        if d_true != 0:
+            d_true = d_true/(d_true+1)
+        if d_false !=0:
+            d_false = d_false/(d_false+1)
+        fitness += d_true
+        fitness += d_false
+    fitness += (5 - len(distances_false)) * 2  #Los branches que no están en los diccionarios no fueron alcanzados.
+                                                #sumo +1 por cada uno ya que no se ejecutó
     return fitness
-
-a = get_fitness_cgi_decode(["%AA"])
-print(a)

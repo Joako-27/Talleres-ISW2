@@ -42,7 +42,7 @@ class TestGetFitnessCgiDecode(unittest.TestCase):
 
     def test9(self):
         # TODO COMPLETAR
-        self.assertEqual(get_fitness_cgi_decode(["+\%1"]), 4.666666666666666)
+        self.assertAlmostEqual(get_fitness_cgi_decode(["+\%1"]), 4.666666666666666) #falla por error de redondeo con assertEqual
 
     def test10(self):
         # TODO COMPLETAR

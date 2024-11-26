@@ -53,6 +53,10 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
     result = False
     distance_true = 0
     distance_false = 0
+    if(not (type(lhs)== str and type(rhs) == str and len(lhs) == len(rhs) == 1
+            or type(lhs) == str and type(rhs)== dict
+            or type(lhs) == int and type(rhs) == int)):
+        return False        #chequeo que sea uno de los casos posibles
     match op:       #Calculo distancias true y false segun el tipo de operacion basandonos en los ejemplos dados en la consigna
         case "Eq":
             result = (lhs == rhs)
@@ -98,8 +102,12 @@ def evaluate_condition(condition_num: int, op: str, lhs: Union[str, Dict, int], 
                     distance_true = 0
                     distance_false = abs(lhs - rhs)
             else:
-                distance_true = abs(lhs - rhs) + 1
-                distance_false = 0
+                if(type(lhs) == str and type(rhs) == str):
+                    distance_true = abs(ord(lhs) - ord(rhs)) + 1
+                    distance_false = 0
+                else:
+                    distance_true = abs(lhs - rhs) + 1
+                    distance_false = 0
 
         case "Gt":
             result = (lhs > rhs)

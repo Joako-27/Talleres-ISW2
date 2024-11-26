@@ -44,23 +44,24 @@ class GeneticAlgorithm():
         new_population = []
         for individual in population:
             new_population.append(individual)
-            if random < self.p_mutation:
+            chance = random()
+            if chance < self.p_mutation:
                 new_population[-1] = mutate(individual)
         return new_population
 
     def covered_all_branches(self, fitness_individual: float) -> bool:
         # TODO COMPLETAR
-        return fitness_individual == 10     #fitness += 1 por cada distance_true/false = 0. 5 condiciones -> 10 fitness si cubrió todos los branches
+        return fitness_individual == 0     #fitness += 1 por cada branch no ejecutado. fitness = 0 --> todos los branches ejecutados
 
     def run(self):
         # Generar y evaluar la poblacion inicial
-        population = create_population()
+        population = create_population(self.population_size)
         fitness_by_individual = evaluate_population(population)
 
         # Imprimir el mejor valor de fitness encontrado
-        best_fitness_and_individual = max(zip(fitness_by_individual.values(), fitness_by_individual.keys()))
+        best_fitness_and_individual = min(zip(fitness_by_individual.values(), fitness_by_individual.keys()))
         print("Mejor fitness de generacion", self.generation, ":", best_fitness_and_individual[0])
-        self.best_individual = best_fitness_and_individual[1]
+        self.best_individual = list(best_fitness_and_individual[1])
         self.fitness_best_individual = best_fitness_and_individual[0]
 
         # Continuar mientras la cantidad de generaciones es menor que 1000
@@ -71,7 +72,7 @@ class GeneticAlgorithm():
             # Producir una nueva poblacion en base a la anterior.
             # Usar selection, crossover y mutation.
             new_population = []
-            new_population = self.generate_crossovers(population)
+            new_population = self.generate_crossovers(population, fitness_by_individual)
             new_population = self.generate_mutations(new_population)
 
             # Una vez creada, reemplazar la poblacion anterior con la nueva
@@ -80,7 +81,7 @@ class GeneticAlgorithm():
 
             # Evaluar la nueva poblacion e imprimir el mejor valor de fitness
             fitness_by_individual = evaluate_population(population)
-            best_fitness_and_individual = max(zip(fitness_by_individual.values(), fitness_by_individual.keys()))
+            best_fitness_and_individual = min(zip(fitness_by_individual.values(), fitness_by_individual.keys()))
             print("Mejor fitness de generacion", self.generation, ":", best_fitness_and_individual[0])
             self.best_individual = best_fitness_and_individual[1]
             self.fitness_best_individual = best_fitness_and_individual[0]

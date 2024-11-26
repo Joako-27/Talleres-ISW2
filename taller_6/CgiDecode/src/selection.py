@@ -1,8 +1,9 @@
+import sys
 from random import sample
 from typing import Tuple
 
 
-def selection(fitness_by_individual: dict, tournament_size: int) -> Tuple[str, float]:
+def selection(fitness_by_individual: dict, tournament_size: int) -> Tuple[list[str], float]:
     """
     fitness_by_individual: Diccionario que contiene a los individuos de la población como keys y su fitness como valores.
     tournament_size: Tamaño del torneo (entero positivo).
@@ -12,10 +13,10 @@ def selection(fitness_by_individual: dict, tournament_size: int) -> Tuple[str, f
     #  (Tournament selection)
     participantes = fitness_by_individual.keys()
     seleccionados = sample(participantes, tournament_size)
-    mayor_fitness = 0
+    mejor_fitness = sys.maxsize
     for individuo in seleccionados:
-        if fitness_by_individual[individuo] > mayor_fitness:
-            mayor_fitness = fitness_by_individual[individuo]
+        if fitness_by_individual[individuo] < mejor_fitness:
+            mejor_fitness = fitness_by_individual[individuo]
             winner = individuo
 
-    return winner, fitness_by_individual[winner]
+    return (list(winner), fitness_by_individual[winner])

@@ -1,6 +1,6 @@
 #!./venv/bin/python
 import unittest
-from taller_6.CgiDecode.src.evaluate_condition import evaluate_condition
+from src.evaluate_condition import evaluate_condition
 
 
 class TestEvaluateCondition(unittest.TestCase):

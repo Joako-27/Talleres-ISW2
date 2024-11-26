@@ -1,6 +1,6 @@
 #!./venv/bin/python
 import unittest
-from CgiDecode.src.get_fitness_cgi_decode import get_fitness_cgi_decode
+from src.get_fitness_cgi_decode import get_fitness_cgi_decode
 
 
 class TestGetFitnessCgiDecode(unittest.TestCase):

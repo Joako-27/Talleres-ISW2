@@ -11,7 +11,7 @@ def selection(fitness_by_individual: dict, tournament_size: int) -> Tuple[list[s
     winner = None
     # TODO: COMPLETAR
     #  (Tournament selection)
-    participantes = fitness_by_individual.keys()
+    participantes = list(fitness_by_individual.keys())
     seleccionados = sample(participantes, tournament_size)
     mejor_fitness = sys.maxsize
     for individuo in seleccionados:

@@ -2,8 +2,8 @@
 import unittest
 
 from random import seed
-from genetic_algorithm import GeneticAlgorithm
-from get_fitness_cgi_decode import get_fitness_cgi_decode
+from src.genetic_algorithm import GeneticAlgorithm
+from src.get_fitness_cgi_decode import get_fitness_cgi_decode
 
 
 class TestGeneticAlgorithm(unittest.TestCase):

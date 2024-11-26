@@ -4,7 +4,7 @@ b)FalseConditionalsMutator,TrueConditionalsMutator y NegateConditionsMutator gen
 c)NullReturnsMutator genero 2.
 
 EJERCICIO 2
-a) Se generaron 69 mutantes y StackTests1 encontro muertos a 18 y vivos a 51. El StackTests2 dejo muertos a 35 y vivos a 34, de 71 mutantes generados.
+a) Se generaron 69 mutantes y StackTests1 encontro muertos a 18 y vivos a 51. El StackTests2 dejo muertos a 35 y vivos a 34, de 69 mutantes generados.
 b) mutationScore del StackTests1: 26%
 mutationScore del StackTests2: 50%
 
@@ -21,7 +21,7 @@ c) Los mutantes vivos son todos equivalentes al programa original:
         Lo que ocurre aca, es que cuando llamamos a top() se chequea isEmpty().
     -(TrueReturnsMutator: Se reemplazó readIndex == other.readIndex por true en la línea 115.)
         Si la ejecucion llego a ese punto, esa condicion siempre sera True.
-d) 19%
+d) 49%
 e) El mutante con menor covertura de instrucciones es el StackArMutated3352 con 3%, que cambia en el constructor del stack el chequeo de que la capacidad sea < 0 para tirar una excepcion a true.
 Como el mutante tiene un error al tratar de generar el primer stack para el primer test, nunca llega a ejecutar más líneas de código.
 

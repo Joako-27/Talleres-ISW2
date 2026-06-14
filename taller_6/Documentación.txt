@@ -1,0 +1,44 @@
+evaluate_condition: Primero se chequea si los argumentos coinciden con alguno de los 3 casos posibles: dos enteros, dos caracteres, o un caracter y un diccionario. Si no es ninguno
+de esos, se devuelve False y no se actualizan las distancias. Se asume que el parámetro op es uno de los casos válidos como precondición. Según el caso, se calculan las distancias
+true y false de acuerdo a los ejemplos dados en la consigna. Para la operación "In" se agregó la función auxiliar get_distance_closest_key que dado un caracter y un diccionario, se
+busca la clave con distancia más cercana a ese caracter. Si el diccionario es vacío, devuelve sys.maxsize, y si el diccionario contiene al caracter como clave devuelve 0, aunque la 
+función solo se llama si ya se chequeó que este caso no sucede.
+
+cgi_decode_instrumented: Se reemplaza los condicionales con llamadas a función evaluate_condition, con su respectivo condition_number. Cada llamada con el mismo condition_number
+actualiza las distancias true y false con el mejor resultado hasta ese momento. El código puede dar excepciones, como por ejemplo si hay un '%' en el test case sin que hayan al 
+menos dos caracteres permitidos detrás. Estas excepciones son handleadas en la siguiente función.
+
+get_fitness_cgi_decode: Recibe un test suite y determina su nivel de fitness llamando a cgi_decode_instrumented para cada uno de sus test cases, siendo el resultado las mejores
+distancias a true y false para cada una de las condiciones de entre todos los casos. Estas distancias luego se normalizan y se usan para calcular el nivel de fitness del test suite,
+con 0 siendo el mejor valor posible y 10 el peor. Por último, se chequea que todas las condiciones hayan sido alcanzadas, y si no, se le suma +2 al fitness por cada condición no
+alcanzada, es decir +1 por cada branch que ni siquiera se pudo llegar a calcular su distancia. Si cuando se llama a cgi_decode_instrumented este tira una excepción, esta se handlea
+simplemente siguiendo con el cálculo del fitness con las distancias que se pudieron calcular antes de la excepción.
+
+create_population: Esta función recibe como entrada el tamaño que se desea para la población, y devuelve una lista del tamaño deseado de test suites generados aleatoriamente.
+Para esto, por cada test suite, se elige aleatoriamente un tamaño entre 1 y 15, y para cada test case se escoge un tamaño de entre 0 y 10. Dado ese tamaño, se eligen caracteres
+válidos al azar para generar cada test case.
+
+evaluate_population: Dada una lista de test suites, devuelve un diccionario de [test suite: fitness level]. Para cada test suite se llama a get_fitness_cgi_decode y se guarda en un
+diccionario el resultado, con su clave siendo el test suite en forma de tupla. Se usa una tupla en vez de una lista como clave ya que las listas no son hasheables y por ende no pueden
+ser usadas como claves. Convertir las tuplas a listas y viceversa es un proceso simple por lo que simplemente convertimos el test suite a una tupla y usamos eso como clave de 
+diccionario, y cuando sea necesario convertimos esa tupla de vuelta en lista.
+
+selection: Dado un diccionario de [test suite: fitness level] y un tamaño de torneo, se devuelve una tupla de <test suite, nivel de fitness del test suite>. El test suite que se 
+devuelve se selecciona usando Tournament Selection: se seleccionan aleatoriamente una cantidad de test suites igual al tamaño de torneo, y se devuelve el que tenga mejor fitness
+entre ellos.
+
+crossover: Dados dos test suites, se devuelven otros dos. Estos dos nuevos test suites se generan de la siguiente manera: se toma el tamaño más corto de entre los dos y se escoge el
+punto medio +1 (se suma +1 para el caso borde de que el test suite más corto solo tenga un test case). Con ese punto de corte, se generan dos test suites nuevos usando single-point
+crossover. El resultado son dos test suites mezcla de ambos originales.
+
+mutate: Dado un test suite, se le aplica una mutación. La mutación puede ser agregar un test case, eliminar uno o modificar uno, y se elige al azar. Si se escoge eliminar o modificar
+un test case, se elige al azar cuál va a ser eliminado/modificado. Si se escoge agregar uno, se lo agrega al final del test suite, ya que no importa en qué orden estén los test cases
+y no afecta el nivel de fitness. Si se escoge modificar un test case, se decide aleatoriamente si se le elimina un caracter, si se le agrega uno o si se le modifica uno. En todos los 
+casos se elige una posicion al azar para agregar/eliminar/modificar. Como hay casos en los que cierta mutación no se le puede aplicar a cierto test case/suite, se vuelve a elegir una
+mutación hasta que se encuentre una que se puede aplicar. Como en todos los casos se puede aplicar al menos un tipo de mutación, no hay riesgo de entrar en un loop infinito, y se
+asegura que todas las veces que se escoja un test suite para mutar, efectivamente lo va a hacer
+
+genetic_algorithm: El algoritmo empieza creando una población al azar de tamaño 100 con create_population, y luego esa población se la evalua con evaluate_population. Si algún test
+suite alcanzó un fitness level de 0, el algoritmo termina y se devuelve el test suite. Si no, se genera una nueva población a partir de crossovers entre dos padres elegidos con
+selection (puede pasar que sean el mismo test suite, pero no consideramos que sea un problema), y luego se le aplica a cada test suite una probabilidad de mutar. Esta nueva población
+es evaluada en busca de un test suite de fitness 0. Este ciclo se repite hasta que se encuentre un test suite de máximo fitness, o se hayan generado 1000 poblaciones en total.
